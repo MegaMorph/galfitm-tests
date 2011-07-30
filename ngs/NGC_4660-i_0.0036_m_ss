@@ -1,11 +1,11 @@
 # IMAGE and GALFIT CONTROL PARAMETERS
-A) NGC_4660-i_0.0036.fits     # Input data image (FITS file)
-B) NGC_4660-i_0.0036_ss.fits    # Output data image block
+A) ngs/NGC_4660-i_0.0036.fits     # Input data image (FITS file)
+B) ngs/NGC_4660-i_0.0036_ss.fits    # Output data image block
 C) none                # Sigma image name (made from data if blank or "none") 
-D) NGC_4660_PSF-i.fits       # Input PSF image and (optional) diffusion kernel
+D) ngs/NGC_4660_PSF-i.fits       # Input PSF image and (optional) diffusion kernel
 E) 1                   # PSF fine sampling factor relative to data 
 F) none                # Bad pixel mask (FITS image or ASCII coord list)
-G) constrain       # File with parameter constraints (ASCII file) 
+G) ngs/constrain       # File with parameter constraints (ASCII file) 
 H) 1 328 1 328  # Image region to fit (xmin xmax ymin ymax)
 I) 109.3333 109.3333 # Size of the convolution box (x y)
 J) 25.614              # Magnitude photometric zeropoint 
