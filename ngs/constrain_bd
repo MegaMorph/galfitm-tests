@@ -1,0 +1,33 @@
+# Component/    parameter   constraint	Comment
+# operation	(see below)   range
+
+   1 	  	   x	     -5.  5.	# Soft constraint: Constrains 
+					# x-position of component
+					# 1 (service to within +0.5 and -1 					# of the >>INPUT<< value.
+  
+   1 	  	   y	     -5.  5.	# Soft constraint: Constrains 
+					# y-position of component
+					# 1 (service to within +0.5 and -1 					
+   2 	  	   x	     -5.  5.	# Soft constraint: Constrains 
+					# x-position of component
+					# 2 (service to within +0.5 and -1 					# of the >>INPUT<< value.
+  
+   2 	  	   y	     -5.  5.	# Soft constraint: Constrains 
+					# y-position of component
+					# 2 (service to within +0.5 and -1 					# of the >>INPUT<< value.
+   1 	  	   Re	     0.5  100.	# Soft constraint: Constrains 
+					# x-position of component
+					# 1 (service to within +0.5 and -1 					# of the >>INPUT<< value.
+  
+   2 	  	   Re	     0.5  100.	# Soft constraint: Constrains 
+					# y-position of component
+					# 1 (service to within +0.5 and -1 					
+   1 		   n	    0.3 to 15   # Soft constraint: Constrains the 
+					# sersic index n to within values 
+				        # from 0.3 to 5.  
+
+
+   2	  	  sky	     -5.  5.	# Soft constraint: Constrains 
+					# sky to within +5 and -5 of the
+					# >>INPUT<< value.
+
