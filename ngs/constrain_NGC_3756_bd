@@ -1,0 +1,18 @@
+# Component/    parameter   constraint	Comment
+# operation	(see below)   range
+
+    1 	  	   x	     -5.  5.	
+    1 	  	   y	     -5.  5.	
+    1		   mag	     -3.  3.
+    1 	  	   Re	     factor 3.0
+    1 		   n	     0.3 to 15
+    1              q         0.01 to 1.0  				           
+    1              pa        -90 to 90.0  
+    2 	  	   x	     -5.  5.	
+    2 	  	   y	     -5.  5.	
+    2		   mag	     -3.  3.
+    2 	  	   Re	     factor 3.0
+    2 		   n	     0.3 to 15
+    2              q         0.01 to 1.0  				           
+    2              pa        -90 to 90.0  
+    3	  	  sky	     -5.  5.

@@ -1,11 +1,11 @@
 # IMAGE and GALFIT CONTROL PARAMETERS
 A) ngs/NGC_3756-r_0.0100.fits     # Input data image (FITS file)
-B) ngs/NGC_3756-r_0.0100_bd.fits    # Output data image block
+B) ngs/NGC_3756-r_0.0100_ss.fits    # Output data image block
 C) none                # Sigma image name (made from data if blank or "none") 
 D) ngs/NGC_4621_PSF-g.fits       # Input PSF image and (optional) diffusion kernel
 E) 1                   # PSF fine sampling factor relative to data 
 F) none                # Bad pixel mask (FITS image or ASCII coord list)
-G) ngs/constrain_NGC_3756_bd       # File with parameter constraints (ASCII file) 
+G) ngs/constrain_NGC_3756       # File with parameter constraints (ASCII file) 
 H) 1 590 1 590  # Image region to fit (xmin xmax ymin ymax)
 I) 200 200 # Size of the convolution box (x y)
 J) 25.614              # Magnitude photometric zeropoint 
@@ -30,10 +30,10 @@ P) 0                   # Choose: 0=optimize, 1=model, 2=imgblock, 3=subcomps
 
 # Object number: 1
  0) sersic                 #  object type
- 1) 296 297  1 1  #  position x, y
- 3) 10.0  1          #  Integrated magnitude	
- 4) 10.0   1          #  R_e (half-light radius)   [pix]
- 5) 4.0    1          #  Sersic index n (de Vaucouleurs n=4) 
+ 1) 295 295  1 1  #  position x, y
+ 3) 9.0  1          #  Integrated magnitude	
+ 4) 50.0   1          #  R_e (half-light radius)   [pix]
+ 5) 1.5    1          #  Sersic index n (de Vaucouleurs n=4) 
  6) 0.0000       0          #     ----- 
  7) 0.0000       0          #     ----- 
  8) 0.0000       0          #     ----- 
@@ -41,18 +41,9 @@ P) 0                   # Choose: 0=optimize, 1=model, 2=imgblock, 3=subcomps
 10) 0   1          #  position angle (PA) [deg: Up=0, Left=90]
  Z) 0                       #  output option (0 = resid., 1 = Don't subtract) 
 
-# Object number: 2
- 0) expdisk                 #  object type
- 1) 296 297  1 1  #  position x, y
- 3) 8  1          #  Integrated magnitude	
- 4) 50.0   1          #  R_e (half-light radius)   [pix]
- 9) 0.6   1          #  axis ratio (b/a)  
-10) 0   1          #  position angle (PA) [deg: Up=0, Left=90]
- Z) 0                       #  output option (0 = resid., 1 = Don't subtract) 
-
 # Object number: 3
  0) sky                    #  object type
- 1) 683.0   1      #  sky background at center of fitting region [ADUs]
+ 1) 680.0   1      #  sky background at center of fitting region [ADUs]
  2) 0.0000          0      #  dsky/dx (sky gradient in x)
  3) 0.0000          0      #  dsky/dy (sky gradient in y)
  Z) 0                      #  output option (0 = resid., 1 = Don't subtract) 
