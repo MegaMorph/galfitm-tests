@@ -1,0 +1,40 @@
+# IMAGE PARAMETERS
+A) t10_5.34_u.fits,t10_5.34_g.fits,t10_5.34_r.fits,t10_5.34_i.fits,t10_5.34_z.fits,t10_5.34_Y.fits,t10_5.34_J.fits,t10_5.34_H.fits,t10_5.34_K.fits   #input file
+A1) u,g,r,i,z,Y,J,H,K             # Band labels (can be omitted if fitting a single band)
+A2) 3543,4770,6231,7625,9134,10305,12483,16313,22010             # Band wavelengths (choice of wavelength units is arbitrary, as long as consistent)
+B) t10_5.34_gf_l.fits    # output file name
+C) none                # Noise image name (made from data if blank or "none")
+D) psu_u.fits,psu_g.fits,psu_r.fits,psu_i.fits,psu_z.fits,psu_Y.fits,psu_J.fits,psu_H.fits,psu_K.fits kernel # Input PSF image and (optional) diffusion kernel
+E) 1                    # PSF oversampling factor relative to data
+F) t10_5.34_r_mask.fits,t10_5.34_u_mask.fits,t10_5.34_g_mask.fits,t10_5.34_i_mask.fits,t10_5.34_z_mask.fits,t10_5.34_Y_mask.fits,t10_5.34_J_mask.fits,t10_5.34_H_mask.fits,t10_5.34_K_mask.fits
+G) t10_5.34_constr
+H) 1 65 1 73       # Image region to fit (xmin xmax ymin ymax)
+I) 128   128         # Size of convolution box (x y)
+J) 30.0000,30.0000,30.0000,30.0000,30.0000,30.0000,30.0000,30.0000,30.0000              # Magnitude photometric zeropoint
+K) 0.33900 0.33900           # Plate scale (dx dy).
+O) regular             # Display type (regular, curses, both)
+P) 0                   # Create ouput only? (1=yes; 0=optimize)
+S) 0                   # Modify/create objects interactively?
+
+
+# sky
+
+ 0) sky
+ 1) 3949.580,6654.200,2830.990,5608.370,25342.000,5308.750,13619.700,59370.200,65017.100    0,0,0,0,0,0,0,0,0  band       # sky background       [ADU counts]
+ 2) 0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000    0,0,0,0,0,0,0,0,0  band      # dsky/dx (sky gradient in x)
+ 3) 0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000    0,0,0,0,0,0,0,0,0  band      # dsky/dy (sky gradient in y)
+ Z) 0                  # output image
+
+
+# Sersic function
+
+ 0) sersic             # Object type
+ 1) 32.01,32.01,32.01,32.01,32.01,32.01,32.01,32.01,32.01  1  band   # position x     [pixel]
+ 2) 35.93,35.93,35.93,35.93,35.93,35.93,35.93,35.93,35.93  1  band   # position y     [pixel]
+ 3) 20.51,22.19,21.47,19.99,19.76,19.69,19.58,19.38,19.40    9   band    # total magnitude
+ 4) 2.09,2.09,2.09,2.09,2.09,2.09,2.09,2.09,2.09    2   band       #     R_e              [Pixels]
+ 5) 2.50,2.50,2.50,2.50,2.50,2.50,2.50,2.50,2.50    2   band       # Sersic exponent (deVauc=4, expdisk=1)
+ 9) 0.5850,0.5850,0.5850,0.5850,0.5850,0.5850,0.5850,0.5850,0.5850    1   band       # axis ratio (b/a)
+10) -33.70,-33.70,-33.70,-33.70,-33.70,-33.70,-33.70,-33.70,-33.70    1   band       # position angle (PA) [Degrees: Up=0, Left=90]
+ Z) 0                  # output image (see above)
+
