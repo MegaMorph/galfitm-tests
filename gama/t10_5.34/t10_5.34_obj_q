@@ -6,7 +6,7 @@ B) t10_5.34_gf_q.fits    # output file name
 C) none                # Noise image name (made from data if blank or "none")
 D) psf_u.fits,psf_g.fits,psf_r.fits,psf_i.fits,psf_z.fits,psf_Y.fits,psf_J.fits,psf_H.fits,psf_K.fits kernel # Input PSF image and (optional) diffusion kernel
 E) 1                    # PSF oversampling factor relative to data
-F) t10_5.34_r_mask.fits,t10_5.34_u_mask.fits,t10_5.34_g_mask.fits,t10_5.34_i_mask.fits,t10_5.34_z_mask.fits,t10_5.34_Y_mask.fits,t10_5.34_J_mask.fits,t10_5.34_H_mask.fits,t10_5.34_K_mask.fits
+F) t10_5.34_u_mask.fits,t10_5.34_g_mask.fits,t10_5.34_r_mask.fits,t10_5.34_i_mask.fits,t10_5.34_z_mask.fits,t10_5.34_Y_mask.fits,t10_5.34_J_mask.fits,t10_5.34_H_mask.fits,t10_5.34_K_mask.fits
 G) t10_5.34_constr
 H) 1 65 1 73       # Image region to fit (xmin xmax ymin ymax)
 I) 128   128         # Size of convolution box (x y)
