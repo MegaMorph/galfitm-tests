@@ -4,7 +4,7 @@ A1) u,g,r,i,z,Y,J,H,K             # Band labels (can be omitted if fitting a sin
 A2) 3543,4770,6231,7625,9134,10305,12483,16313,22010             # Band wavelengths (choice of wavelength units is arbitrary, as long as consistent)
 B) t10_5.34_gf_q.fits    # output file name
 C) none                # Noise image name (made from data if blank or "none")
-D) psu_u.fits,psu_g.fits,psu_r.fits,psu_i.fits,psu_z.fits,psu_Y.fits,psu_J.fits,psu_H.fits,psu_K.fits kernel # Input PSF image and (optional) diffusion kernel
+D) psf_u.fits,psf_g.fits,psf_r.fits,psf_i.fits,psf_z.fits,psf_Y.fits,psf_J.fits,psf_H.fits,psf_K.fits kernel # Input PSF image and (optional) diffusion kernel
 E) 1                    # PSF oversampling factor relative to data
 F) t10_5.34_r_mask.fits,t10_5.34_u_mask.fits,t10_5.34_g_mask.fits,t10_5.34_i_mask.fits,t10_5.34_z_mask.fits,t10_5.34_Y_mask.fits,t10_5.34_J_mask.fits,t10_5.34_H_mask.fits,t10_5.34_K_mask.fits
 G) t10_5.34_constr
