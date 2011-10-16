@@ -47,7 +47,7 @@ P) 0                   # Choose: 0=optimize, 1=model, 2=imgblock, 3=subcomps
 
 # Object number: 2
  0) sky                    #  object type
- 1) 100             1      #  sky background at center of fitting region [ADUs]
+ 1) 100             5      #  sky background at center of fitting region [ADUs]
  2) 0.0000          0      #  dsky/dx (sky gradient in x)
  3) 0.0000          0      #  dsky/dy (sky gradient in y)
  Z) 0                      #  output option (0 = resid., 1 = Don't subtract) 
