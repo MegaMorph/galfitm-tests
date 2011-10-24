@@ -7,7 +7,7 @@ C) none                # Sigma image name (made from data if blank or "none")
 D) simple/psf.fits   #        # Input PSF image and (optional) diffusion kernel
 E) 1                   # PSF fine sampling factor relative to data 
 F) none                # Bad pixel mask (FITS image or ASCII coord list)
-G) none                # File with parameter constraints (ASCII file) 
+G) simple/simple.constraints  # File with parameter constraints (ASCII file) 
 H) 1    93   1    93   # Image region to fit (xmin xmax ymin ymax)
 I) 100    100          # Size of the convolution box (x y)
 J) 26.563              # Magnitude photometric zeropoint 

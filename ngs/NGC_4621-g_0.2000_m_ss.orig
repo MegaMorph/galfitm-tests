@@ -1,13 +1,23 @@
 # IMAGE and GALFIT CONTROL PARAMETERS
-A) ngs/NGC_4621-u_0.1000.fits     # Input data image (FITS file)
-B) ngs/NGC_4621-u_0.1000_ss.fits    # Output data image block
+<<<<<<< HEAD
+A) ngs/NGC_4621-g_0.2000.fits     # Input data image (FITS file)
+B) ngs/NGC_4621-g_0.2000_ss.fits    # Output data image block
 C) none                # Sigma image name (made from data if blank or "none") 
-D) ngs/NGC_4621_PSF-u.fits       # Input PSF image and (optional) diffusion kernel
+D) ngs/NGC_4621_PSF-g.fits       # Input PSF image and (optional) diffusion kernel
 E) 1                   # PSF fine sampling factor relative to data 
 F) none                # Bad pixel mask (FITS image or ASCII coord list)
 G) ngs/constrain       # File with parameter constraints (ASCII file) 
-H) 1 84 1 84  # Image region to fit (xmin xmax ymin ymax)
-I) 28 28 # Size of the convolution box (x y)
+=======
+A) NGC_4621-g_0.2000.fits     # Input data image (FITS file)
+B) NGC_4621-g_0.2000_ss.fits    # Output data image block
+C) none                # Sigma image name (made from data if blank or "none") 
+D) NGC_4621_PSF-g.fits       # Input PSF image and (optional) diffusion kernel
+E) 1                   # PSF fine sampling factor relative to data 
+F) none                # Bad pixel mask (FITS image or ASCII coord list)
+G) constrain       # File with parameter constraints (ASCII file) 
+>>>>>>> 8d1460d... Added some example galaxy images for testing.
+H) 1 47 1 47  # Image region to fit (xmin xmax ymin ymax)
+I) 15.66667 15.66667 # Size of the convolution box (x y)
 J) 25.614              # Magnitude photometric zeropoint 
 K) 0.396 0.396      # Plate scale (dx dy)    [arcsec per pixel]
 O) regular             # Display type (regular, curses, both)
@@ -30,20 +40,20 @@ P) 0                   # Choose: 0=optimize, 1=model, 2=imgblock, 3=subcomps
 
 # Object number: 1
  0) sersic                 #  object type
- 1) 42 42  1 1  #  position x, y
- 3) 17.226  1          #  Integrated magnitude	
- 4) 2.8655   1          #  R_e (half-light radius)   [pix]
+ 1) 23.5 23.5  1 1  #  position x, y
+ 3) 17.037  1          #  Integrated magnitude	
+ 4) 0.00049965   1          #  R_e (half-light radius)   [pix]
  5) 1.5    1          #  Sersic index n (de Vaucouleurs n=4) 
  6) 0.0000       0          #     ----- 
  7) 0.0000       0          #     ----- 
  8) 0.0000       0          #     ----- 
- 9) 0.919   1          #  axis ratio (b/a)  
-10) 41.416   1          #  position angle (PA) [deg: Up=0, Left=90]
+ 9) 0.755   1          #  axis ratio (b/a)  
+10) 18.556   1          #  position angle (PA) [deg: Up=0, Left=90]
  Z) 0                       #  output option (0 = resid., 1 = Don't subtract) 
 
 # Object number: 2
  0) sky                    #  object type
- 1) 410.462   1      #  sky background at center of fitting region [ADUs]
+ 1) 2842.55   1      #  sky background at center of fitting region [ADUs]
  2) 0.0000          0      #  dsky/dx (sky gradient in x)
  3) 0.0000          0      #  dsky/dy (sky gradient in y)
  Z) 0                      #  output option (0 = resid., 1 = Don't subtract) 

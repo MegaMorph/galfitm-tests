@@ -31,8 +31,8 @@ P) 0                   # Choose: 0=optimize, 1=model, 2=imgblock, 3=subcomps
 # Object number: 1
  0) sersic                 #  object type
  1) 164 164  1 1  #  position x, y
- 3) 11.18  1          #  Integrated magnitude	
- 4) 10   1          #  R_e (half-light radius)   [pix]
+ 3) 7.0  1          #  Integrated magnitude	
+ 4) 20   1          #  R_e (half-light radius)   [pix]
  5) 1.5    1          #  Sersic index n (de Vaucouleurs n=4) 
  6) 0.0000       0          #     ----- 
  7) 0.0000       0          #     ----- 

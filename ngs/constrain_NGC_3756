@@ -25,6 +25,6 @@
     1              pa         -90 to 90.0       # Soft constraint: Constrains the 
 						# pa to within values 
 				        	# from -90 to 90.
-    2              sky        -5.0  5.0         # Soft constraint: Constrains the 
+    2              sky        -10.0  10.0         # Soft constraint: Constrains the 
 						# sky level to within +5.0 and -5.0
 						# of the >>INPUT<< value.
