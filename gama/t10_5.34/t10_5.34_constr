@@ -1,0 +1,10 @@
+# Component/    parameter   constraint  Comment
+# operation                  values
+           2 n 0.200000 to 12.0000
+           2 re 0.3 to 400.000
+           2 q 0.0001  to 1.
+           2 mag -5.00000 5.00000
+           2 mag 0 to 40
+           2 pa -360 to 360
+           2 x          -65           65
+           2 y          -73           73
