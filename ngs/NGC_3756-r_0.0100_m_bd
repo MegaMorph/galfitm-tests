@@ -1,6 +1,6 @@
 # IMAGE and GALFIT CONTROL PARAMETERS
 A) ngs/NGC_3756-r_0.0100.fits     # Input data image (FITS file)
-B) ngs/NGC_3756-r_0.0100_ss.fits    # Output data image block
+B) ngs/NGC_3756-r_0.0100_bd.fits    # Output data image block
 C) none                # Sigma image name (made from data if blank or "none") 
 D) ngs/NGC_4621_PSF-g.fits       # Input PSF image and (optional) diffusion kernel
 E) 1                   # PSF fine sampling factor relative to data 
