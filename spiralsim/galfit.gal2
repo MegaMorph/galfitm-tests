@@ -68,7 +68,7 @@ P) 0                   # Choose: 0=optimize, 1=model, 2=imgblock, 3=subcomps
  8) 0.0000      0          #     ----- 
  9) 0.3         1          #  Axis ratio (b/a)  
 10) 0.0         1          #  Position angle (PA) [deg: Up=0, Left=90]
-C0) 1.0
+C0) 1.0         0
  Z) 0                      #  Skip this model in output image?  (yes=1, no=0)
 
 
