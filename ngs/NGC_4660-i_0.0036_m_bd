@@ -1,6 +1,6 @@
 # IMAGE and GALFIT CONTROL PARAMETERS
 A) ngs/NGC_4660-i_0.0036.fits     # Input data image (FITS file)
-B) ngs/NGC_4660-i_0.0036_ss.fits    # Output data image block
+B) ngs/NGC_4660-i_0.0036_db.fits    # Output data image block
 C) none                # Sigma image name (made from data if blank or "none") 
 D) ngs/NGC_4660_PSF-i.fits       # Input PSF image and (optional) diffusion kernel
 E) 1                   # PSF fine sampling factor relative to data 
@@ -32,7 +32,7 @@ P) 0                   # Choose: 0=optimize, 1=model, 2=imgblock, 3=subcomps
  0) sersic                 #  object type
  1) 166 166  1 1  #  position x, y
  3) 6.8  1          #  Integrated magnitude	
- 4) 25.0   1          #  R_e (half-light radius)   [pix]
+ 4) 45.0   1          #  R_e (half-light radius)   [pix]
  5) 4.0    0          #  Sersic index n (de Vaucouleurs n=4) 
  6) 0.0000       0          #     ----- 
  7) 0.0000       0          #     ----- 
@@ -44,9 +44,9 @@ P) 0                   # Choose: 0=optimize, 1=model, 2=imgblock, 3=subcomps
 # Object number: 2
  0) expdisk                 #  object type
  1) 166 166  1 1  #  position x, y
- 3) 6.8  1          #  Integrated magnitude	
- 4) 25.0   1          #  R_e (half-light radius)   [pix]
- 9) 0.4   1          #  axis ratio (b/a)  
+ 3) 7.5  1          #  Integrated magnitude	
+ 4) 20.0   1          #  R_e (half-light radius)   [pix]
+ 9) 0.3   1          #  axis ratio (b/a)  
 10) -85   1          #  position angle (PA) [deg: Up=0, Left=90]
  Z) 0                       #  output option (0 = resid., 1 = Don't subtract) 
 
