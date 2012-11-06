@@ -14,7 +14,7 @@ def make_images():
     gals = glob('galfit.gal*')
 
     for g in gals:
-        os.system('galfit %s'%g)
+        os.system('galfitm-0.0.3 %s'%g)
         imgname = g.replace('galfit.', '')
         for i, n in enumerate(noiselevels):
             img = pyfits.open(imgname+'.fits')
