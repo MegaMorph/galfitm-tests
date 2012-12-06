@@ -18,9 +18,9 @@
 						# mag Cheb coeff 1 of component 1
 						# to within +0.1 and -0.1 of
 						# the >>INPUT<< value.
-    1	  	   re	      0.01 to 10.0	# Soft constraint: Constrains the 
+    1	  	   re	      0.01 to 50.0	# Soft constraint: Constrains the 
 						# re to within values 
-						# from 0.01 to 10.
+						# from 0.01 to 50.
     1	  	   re_1      -0.1  0.1		# Soft constraint: Constrains 
 						# re Cheb coeff 1 of component 1
 						# to within +0.1 and -0.1 of
@@ -36,26 +36,26 @@
 				        	# from -90 to 90.
 
     2	  	   x	     -5.0  5.0		# Soft constraint: Constrains 
-						# x-position of component 1
+						# x-position of component 2
 						# to within +5.0 and -5.0 of
 						# the >>INPUT<< value.
     2	  	   y	     -5.0  5.0		# Soft constraint: Constrains 
-						# y-position of component 1
+						# y-position of component 2
 						# to within +5.0 and -5.0 of
 						# the >>INPUT<< value.
     2	  	   mag	     -5.0  5.0		# Soft constraint: Constrains 
-						# magnitude of component 1
+						# magnitude of component 2
 						# to within +5.0 and -5.0 of
 						# the >>INPUT<< value.
     2	  	   mag_1     -0.1  0.1		# Soft constraint: Constrains 
-						# mag Cheb coeff 1 of component 1
+						# mag Cheb coeff 1 of component 2
 						# to within +0.1 and -0.1 of
 						# the >>INPUT<< value.
-    2	  	   re	      0.01 to 10.0	# Soft constraint: Constrains the 
+    2	  	   re	      0.01 to 50.0	# Soft constraint: Constrains the 
 						# re to within values 
-						# from 0.01 to 10.
+						# from 0.01 to 50.
     2	  	   re_1      -0.1  0.1		# Soft constraint: Constrains 
-						# re Cheb coeff 1 of component 1
+						# re Cheb coeff 1 of component 2
 						# to within +0.1 and -0.1 of
 						# the >>INPUT<< value.
     2              n          0.3 to 15         # Soft constraint: Constrains the 
