@@ -1,7 +1,7 @@
 ================================================================================
 # IMAGE and GALFIT CONTROL PARAMETERS
-A) gal6n1.fits            # Input data image (FITS file)
-B) gal6n1fit.fits         # Output data image block
+A) gal5.fits            # Input data image (FITS file)
+B) gal5fit.fits         # Output data image block
 C) none                # Sigma image name (made from data if blank or "none") 
 D) none                # Input PSF image and (optional) diffusion kernel
 E) 1                   # PSF fine sampling factor relative to data 

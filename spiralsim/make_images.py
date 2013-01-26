@@ -9,6 +9,11 @@ import os, sys, getopt
 
 """make_images.py - Create images for galfitm spiralsim test
 
+    As well as creating singe-band images from the model feedmes, this
+    routine produces multi-band model feedmes and corresponding
+    images.  It also produces fit feedmes for the various noise levels
+    and non-parametric versions.
+
     Usage:
         make_images.py [arch]
         
@@ -17,13 +22,16 @@ import os, sys, getopt
 
 """
 
-def make_images(arch='linux'):
+noiselevels = [1, 5, 10, 50, 100]
 
-    noiselevels = [1, 5, 10, 50, 100]
+def make_images(arch='linux'):
     noise = [pyfits.getdata('n%i.fits'%i) for i in noiselevels]
 
     gals = glob('galfit.gal*')
+    for g in gals:
+        make_mwl_feedme(g)
 
+    gals = glob('galfit.gal*')
     for g in gals:
         os.system('galfitm-0.0.3-%s %s'%(arch, g))
         imgname = g.replace('galfit.', '')
@@ -32,6 +40,65 @@ def make_images(arch='linux'):
             img[0].data += noise[i]
             img.writeto(imgname+'n%i.fits'%n, clobber=True)
 
+    feedmes = glob('feedme.gal*[0123456789]')
+    for f in feedmes:
+        create_noise_feedmes(f)
+
+
+def create_noise_feedmes(feedme):
+    feedmelines = file(feedme).readlines()
+    for i, n in enumerate(noiselevels):
+        for nonparam in (False, True):
+            if nonparam:
+                np = 'n'
+            else:
+                np = ''
+            feedmeout = file(feedme+'n%i%s'%(n,np), 'w')
+            for l in feedmelines:
+                ls = l.split(None, 2)
+                if len(ls) > 1 and ls[0] == 'A)':
+                    l = l.replace('.fits', 'n%i.fits'%n)
+                if len(ls) > 1 and ls[0] == 'B)':
+                    l = l.replace('fit.fits', 'n%i%sfit.fits'%(n,np))
+                if nonparam and len(ls) > 1 and ls[0] == 'U)':
+                    l = l.replace('0', '1', 1)
+                feedmeout.write(l)
+        feedmeout.close()
+
+
+def make_mwl_feedme(feedme='galfit.gal8'):
+    bands = 'ugrizYJHK'
+    # corresponds to bulge or disk in illustration model B:
+    mag_disk = [17.687,16.717,15.753,15.315,15.019,14.936,14.745,14.425,14.299]
+    # corresponds to bulge in illustration model E:
+    mag_spheroid = [18.546,17.519,15.753,15.084,14.764,14.623,14.433,14.02,13.78]
+    # corresponds to disk in illustration model E:
+    mag_arms = [16.999,16.127,15.753,15.529,15.389,15.41,15.384,15.192,15.281]
+
+    component = 0
+    feedmelines = file(feedme).readlines()
+    for i, b in enumerate(bands):
+        feedmeout = file(feedme+b, 'w')
+        for l in feedmelines:
+            ls = l.split(None, 2)
+            if len(ls) > 1 and ls[0] == '3)':
+                component += 1
+                mag0 = float(ls[1])
+                if component == 1:
+                    magmwl = mag_spheroid
+                elif component == 2:
+                    magmwl = mag_disk
+                else:
+                    magmwl = mag_arms
+                deltamag = magmwl[2] - mag0
+                mag = magmwl[i] - deltamag
+                mags = '%.3f'%mag
+                l = l.replace(ls[1], mags)
+            if len(ls) > 1 and ls[0] == 'B)':
+                l = l.replace('.fits', b+'.fits')
+            feedmeout.write(l)
+        feedmeout.close()
+                
 
 class Usage(Exception):
     def __init__(self, msg):
