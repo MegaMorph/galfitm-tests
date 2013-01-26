@@ -29,7 +29,7 @@ def make_images(arch='linux'):
 
     gals = glob('galfit.gal*')
     for g in gals:
-        make_mwl_feedme(g)
+        make_mwl_model_feedme(g)
 
     gals = glob('galfit.gal*')
     for g in gals:
@@ -42,10 +42,14 @@ def make_images(arch='linux'):
 
     feedmes = glob('feedme.gal*[0123456789]')
     for f in feedmes:
-        create_noise_feedmes(f)
+        make_mwl_fit_feedme(f)
+
+    feedmes = glob('feedme.gal*[0123456789]')
+    for f in feedmes:
+        make_noise_feedme(f)
 
 
-def create_noise_feedmes(feedme):
+def make_noise_feedme(feedme):
     feedmelines = file(feedme).readlines()
     for i, n in enumerate(noiselevels):
         for nonparam in (False, True):
@@ -66,7 +70,7 @@ def create_noise_feedmes(feedme):
         feedmeout.close()
 
 
-def make_mwl_feedme(feedme='galfit.gal8'):
+def make_mwl_model_feedme(feedme='galfit.gal8'):
     bands = 'ugrizYJHK'
     # corresponds to bulge or disk in illustration model B:
     mag_disk = [17.687,16.717,15.753,15.315,15.019,14.936,14.745,14.425,14.299]
@@ -99,6 +103,25 @@ def make_mwl_feedme(feedme='galfit.gal8'):
             feedmeout.write(l)
         feedmeout.close()
                 
+
+def make_mwl_fit_feedme(feedme='feedme.gal8'):
+    bands = 'ugrizYJHK'
+    feedmelines = file(feedme).readlines()
+    feedmeout = file(feedme+'mwl', 'w')
+    for l in feedmelines:
+        ls = l.split(None, 3)
+        if len(ls) > 1 and ls[0] == '3)':
+            l = l.replace(' 1 ', ' 7 ')
+        if len(ls) > 1 and ls[0] == 'A)':
+            out = ','.join(ls[1].replace('.fits', b+'.fits') for b in bands)
+            l = l.replace(ls[1], out)
+            l += 'A1) u,g,r,i,z,Y,J,H,K                                # Band labels\n'
+            l += 'A2) 3543,4770,6231,7625,9134,10305,12483,16313,22010 # Band wavelengths\n'
+        if len(ls) > 1 and ls[0] == 'B)':
+            l = l.replace('fit.fits', 'mwlfit.fits')
+        feedmeout.write(l)
+    feedmeout.close()
+
 
 class Usage(Exception):
     def __init__(self, msg):
