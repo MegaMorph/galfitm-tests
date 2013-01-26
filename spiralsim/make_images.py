@@ -45,6 +45,7 @@ def make_images(arch='linux'):
         make_mwl_fit_feedme(f)
 
     feedmes = glob('feedme.gal*[0123456789]')
+    feedmes += glob('feedme.gal*[0123456789]mwl')
     for f in feedmes:
         make_noise_feedme(f)
 
