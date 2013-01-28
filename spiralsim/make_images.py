@@ -101,8 +101,6 @@ def make_mwl_model_feedme(feedme='galfit.gal8'):
                 l = l.replace(ls[1], mags)
             if len(ls) > 1 and ls[0] == 'B)':
                 l = l.replace('.fits', b+'.fits')
-            if len(ls) > 1 and ls[0][0] in 'DJ':
-                l = l.replace(ls[1], ','.join([ls[1]]*9))
             feedmeout.write(l)
         feedmeout.close()
                 
