@@ -7,7 +7,7 @@ D) psf.fits #          # Input PSF image and (optional) diffusion kernel
 E) 1                   # PSF fine sampling factor relative to data 
 F) none                # Bad pixel mask (FITS image or ASCII coord list)
 G) none                # File with parameter constraints (ASCII file) 
-H) 1   500  1   500    # Image region to fit (xmin xmax ymin ymax)
+H) 101   400  101   400    # Image region to fit (xmin xmax ymin ymax)
 I) 100    100          # Size of the convolution box (x y)
 J) 22.000              # Magnitude photometric zeropoint 
 K) 1.000  1.000        # Plate scale (dx dy)   [arcsec per pixel]
