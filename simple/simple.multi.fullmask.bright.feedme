@@ -1,10 +1,10 @@
 
 ===============================================================================
 # IMAGE and GALFIT CONTROL PARAMETERS
-A) simple/gal.fits,simple/gal.fits,simple/gal.fits            # Input data image (FITS file)
+A) simple/gal.fits,simple/galbright.fits,simple/gal.fits            # Input data image (FITS file)
 A1) a,b,c              # Band labels
 A2) 5000,3000,6000     # Band wavelengths
-B) simple/imgblock.multi.fullmask.fits       # Output data image block
+B) simple/imgblock.multi.fullmask.bright.fits       # Output data image block
 C) none,simple/sigma.fits,none # Sigma image name (made from data if blank or "none") 
 D) simple/psf.fits,simple/psf.fits,simple/psf.fits   #        # Input PSF image and (optional) diffusion kernel
 E) 1                   # PSF fine sampling factor relative to data 
