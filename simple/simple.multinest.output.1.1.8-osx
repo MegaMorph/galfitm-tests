@@ -1,0 +1,10 @@
+ 
+   Doh!  GALFIT crashed because at least one of the model parameters 
+   is bad.  The most common causes are: effective radius too small/big,
+   component is too far outside of fitting region (also check fitting
+   region), model mag too faint, axis ratio too small, Sersic index
+   too small/big, Nuker powerlaw too small/big.  If frustrated or 
+   problem should persist, email for help or report problem to: 
+                          cyp@nrc-cnrc.gc.ca 
+
+
