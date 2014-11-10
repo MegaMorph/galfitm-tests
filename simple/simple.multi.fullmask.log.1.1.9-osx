@@ -1,0 +1,15 @@
+-----------------------------------------------------------------------------
+
+Input images    : simple/gal.fits,simple/gal.fits,simple/gal.fits [1:93,1:93] 
+Init. par. file : simple/simple.multi.fullmask.feedme 
+Restart file    : galfit.01 
+Output image    : simple/imgblock.multi.fullmask.fits 
+
+ sersic    : (   46.53,    48.27)   23.01    2.50    3.96    0.85  -71.06
+               (  0.00,     0.00)    0.00    0.00    0.00    0.00    0.01
+ sky       : [ 47.00,  47.00]  5.85e-01  [0.00e+00]  [0.00e+00]
+                                0.00e+00  [0.00e+00]  [1.03e-02]
+ Chi^2 = 17332.84119,  ndof = 17222
+ Chi^2/nu = 1.006 
+
+-----------------------------------------------------------------------------
