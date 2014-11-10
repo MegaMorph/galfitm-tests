@@ -18,10 +18,12 @@ function test_galfitm {
     # run galfit and record results
     echo; echo "Testing $GALFIT $INFEEDME"
     OUTFEEDME=${INFEEDME}.$VERSION
+    OUTPUTFULL=${INFEEDME/feedme/outputfull}.$VERSION
     OUTPUT=${INFEEDME/feedme/output}.$VERSION
     OUTLOG=${INFEEDME/feedme/log}.$VERSION
     rm -f galfit.01 fit.log
-    $GALFIT $INFEEDME | tail -10 &> $OUTPUT
+    $GALFIT $INFEEDME | &> $OUTPUTFULL
+    cat $OUTPUTFULL | tail -10 &> $OUTPUT
     mv -f galfit.01 $OUTFEEDME &> /dev/null
     mv -f fit.log $OUTLOG &> /dev/null
     if [ $? -ne 0 ] ; then
