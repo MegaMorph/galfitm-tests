@@ -22,7 +22,7 @@ function test_galfitm {
     OUTPUT=${INFEEDME/feedme/output}.$VERSION
     OUTLOG=${INFEEDME/feedme/log}.$VERSION
     rm -f galfit.01 fit.log
-    $GALFIT $INFEEDME | &> $OUTPUTFULL
+    $GALFIT $INFEEDME &> $OUTPUTFULL
     cat $OUTPUTFULL | tail -10 &> $OUTPUT
     mv -f galfit.01 $OUTFEEDME &> /dev/null
     mv -f fit.log $OUTLOG &> /dev/null
