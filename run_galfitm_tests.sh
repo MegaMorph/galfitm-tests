@@ -2,6 +2,7 @@
 
 VERSION=$1
 COMPARE=$2
+TESTNAME=$3
 GALFIT="../exec/galfitm-"$VERSION
 
 function compare {
@@ -47,7 +48,7 @@ function test_galfitm {
 
 # Simple tests
 
-FEEDME_LIST=`ls simple/*feedme | grep -v many`
+FEEDME_LIST=`ls simple/*${TESTNAME}*feedme | grep -v many`
 for FEEDME in $FEEDME_LIST
 do
     test_galfitm $FEEDME $COMPARE 2> /dev/null
