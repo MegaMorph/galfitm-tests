@@ -32,7 +32,7 @@ function test_galfitm {
     fi
     # compare results with previous
     if [ "$TEST" = "" ] ; then
-	TEST=`ls ${INFEEDME}.*.* | grep -v ${OUTFEEDME} | tail -1`
+	TEST=`ls ${INFEEDME}.*.* | sort -t. -k 3,3n -k 4,4n -k 5,5n -k 6,6n -k 7,7n -k 8,8n -k 9,9n | grep -v ${OUTFEEDME} | tail -1`
     else
 	TEST=${INFEEDME}.$TEST
     fi
