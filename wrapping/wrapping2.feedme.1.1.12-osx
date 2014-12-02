@@ -1,0 +1,58 @@
+
+#  Input menu file: wrapping/wrapping2.feedme
+
+#  Chi^2/nu = 1.025,  Chi^2 = 369070.805,  Ndof = 359981
+
+================================================================================
+# IMAGE and GALFIT CONTROL PARAMETERS
+A) wrapping/models/modelWf_1u_f0.fits,wrapping/models/modelWf_2g_f0.fits,wrapping/models/modelWf_3r_f0.fits,wrapping/models/modelWf_4i_f0.fits,wrapping/models/modelWf_5z_f0.fits,wrapping/models/modelWf_6Y_f0.fits,wrapping/models/modelWf_7J_f0.fits,wrapping/models/modelWf_8H_f0.fits,wrapping/models/modelWf_9K_f0.fits      # Input data image (FITS file)
+A1) u,g,r,i,z,Y,J,H,K     # Band labels
+A2) 3543.00,4770.00,6231.00,7625.00,9134.00,10305.0,12483.0,16313.0,22010.0     # Band wavelengths
+B) wrapping/wrapping2.fits      # Output data image block
+C) wrapping/models/modelWf_1u_f0_sigma.fits,wrapping/models/modelWf_2g_f0_sigma.fits,wrapping/models/modelWf_3r_f0_sigma.fits,wrapping/models/modelWf_4i_f0_sigma.fits,wrapping/models/modelWf_5z_f0_sigma.fits,wrapping/models/modelWf_6Y_f0_sigma.fits,wrapping/models/modelWf_7J_f0_sigma.fits,wrapping/models/modelWf_8H_f0_sigma.fits,wrapping/models/modelWf_9K_f0_sigma.fits      # Sigma image name (made from data if blank or "none") 
+D) none,none,none,none,none,none,none,none,none          # Input PSF image and (optional) diffusion kernel
+E) 1                   # PSF fine sampling factor relative to data 
+F) none,none,none,none,none,none,none,none,none      # Bad pixel mask (FITS image or ASCII coord list)
+G) none                # File with parameter constraints (ASCII file) 
+H) 1    200  1    200  # Image region to fit (xmin xmax ymin ymax)
+I) 200    200          # Size of the convolution box (x y)
+J) 29.000,29.000,29.000,29.000,29.000,29.000,29.000,29.000,29.000      # Magnitude photometric zeropoint 
+K) 1.000  1.000        # Plate scale (dx dy)   [arcsec per pixel]
+O) regular             # Display type (regular, curses, both)
+P) 0                   # Choose: 0=optimize, 1=model, 2=imgblock, 3=subcomps
+U) 0,0.750000,25,4,40      # Non-parametric component settings
+V) 0,0,500,0.800000,0.500000,100000   # MultiNest options
+
+# INITIAL FITTING PARAMETERS
+#
+#   For component type, the allowed functions are: 
+#       sersic, expdisk, edgedisk, devauc, king, nuker, psf, 
+#       gaussian, moffat, ferrer, and sky. 
+#  
+#   Hidden parameters will only appear when they're specified:
+#       Bn (n=integer, Bending Modes).
+#       C0 (diskyness/boxyness), 
+#       Fn (n=integer, Azimuthal Fourier Modes).
+#       R0-R10 (coordinate rotation, for creating spiral structures).
+#       To, Ti, T0-T10 (truncation function).
+# 
+# ------------------------------------------------------------------------------
+#   par)    par value(s)    fit toggle(s)    # parameter description 
+# ------------------------------------------------------------------------------
+
+# Component number: 1
+ 0) sersic                 #  Component type
+ 1) 100.002,0,0,0,0,0,0,0,0    1,0,0,0,0,0,0,0,0      cheb #      Position x
+ 2) 100.002,0,0,0,0,0,0,0,0    1,0,0,0,0,0,0,0,0      cheb #      Position y
+ 3) 15.636,-1.118,0.754,-0.350,4.098e-03,-0.196,-0.115,0,0    1,1,1,1,1,1,1,0,0      cheb #  Integrated magnitude 
+ 4) 10.157,-0.744,0.201,0,0,0,0,0,0    1,1,1,0,0,0,0,0,0      cheb #  R_e (effective radius)   [pix]
+ 5) 2.130,-0.152,3.956e-02,0,0,0,0,0,0    1,1,1,0,0,0,0,0,0      cheb #  Sersic index n (de Vaucouleurs n=4) 
+ 6) 0,0,0,0,0,0,0,0,0    0,0,0,0,0,0,0,0,0      cheb #     ----- 
+ 7) 0,0,0,0,0,0,0,0,0    0,0,0,0,0,0,0,0,0      cheb #     ----- 
+ 8) 0,0,0,0,0,0,0,0,0    0,0,0,0,0,0,0,0,0      cheb #     ----- 
+ 9) 0.664,0,0,0,0,0,0,0,0    1,0,0,0,0,0,0,0,0      cheb #  Axis ratio (b/a)  
+10) -85.172,30.126,0.311,0,0,0,0,0,0    1,1,1,0,0,0,0,0,0      cheb #  Position angle (PA) [deg: Up=0, Left=90]
+ Z) 0                      #  Skip this model in output image?  (yes=1, no=0)
+
+================================================================================
+

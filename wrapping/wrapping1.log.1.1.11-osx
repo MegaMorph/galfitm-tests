@@ -1,0 +1,13 @@
+-----------------------------------------------------------------------------
+
+Input images    : wrapping/models/modelWa_1u_f0.fits,wrapping/models/modelWa_2g_f0.fits,wrapping/models/modelWa_3r_f0.fits,wrapping/models/modelWa_4i_f0.fits,wrapping/models/modelWa_5z_f0.fits,wrapping/models/modelWa_6Y_f0.fits,wrapping/models/modelWa_7J_f0.fits,wrapping/models/modelWa_8H_f0.fits,wrapping/models/modelWa_9K_f0.fits [1:200,1:200] 
+Init. par. file : wrapping/wrapping1.feedme 
+Restart file    : galfit.01 
+Output image    : wrapping/wrapping1.fits 
+
+ sersic    : (  100.00,    99.99)   17.93   10.99    2.30    0.67   -4.93
+               (  0.00,     0.00)    0.00    0.00    0.00    0.00    0.01
+ Chi^2 = 366339.40396,  ndof = 359981
+ Chi^2/nu = 1.018 
+
+-----------------------------------------------------------------------------

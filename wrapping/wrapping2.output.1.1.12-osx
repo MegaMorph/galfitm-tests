@@ -1,0 +1,10 @@
+ J  : sersic    : (  100.00,   100.00)   15.03      9.98    2.10    0.66   -86.44
+ H  : sersic    : (  100.00,   100.00)   14.74      9.73    2.04    0.66   -73.85
+ K  : sersic    : (  100.00,   100.00)   14.62      9.61    2.02    0.66   -54.73
+COUNTDOWN = 0 
+
+
+
+Fit summary is now being saved into `fit.log'.
+
+
