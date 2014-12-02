@@ -53,3 +53,12 @@ for FEEDME in $FEEDME_LIST
 do
     test_galfitm $FEEDME $COMPARE 2> /dev/null
 done
+
+
+# Wrapping tests
+
+FEEDME_LIST=`ls wrapping/*${TESTNAME}*feedme`
+for FEEDME in $FEEDME_LIST
+do
+    test_galfitm $FEEDME $COMPARE 2> /dev/null
+done
