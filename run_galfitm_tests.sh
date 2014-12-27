@@ -6,7 +6,7 @@ TESTNAME=$3
 GALFIT="../exec/galfitm-"$VERSION
 
 function compare {
-    if ! diff -q $1 $2 > /dev/null ; then
+    if ! diff -w -q $1 $2 > /dev/null ; then
 	echo "BAD?: ${2} differs from ${1}"
     else
 	echo "GOOD: ${2} identical to ${1}"
