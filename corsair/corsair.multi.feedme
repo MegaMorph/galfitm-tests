@@ -1,0 +1,49 @@
+================================================================================
+# IMAGE and GALFIT CONTROL PARAMETERS
+#
+# A) Input data image (FITS file)
+# B) Output data image block
+# C) Sigma image name (made from data if blank or "none")
+# D) Input PSF image and (optional) diffusion kernel
+# E) PSF fine sampling factor relative to data
+# F) Bad pixel mask (FITS image or ASCII coord list)
+# G) File with parameter constraints (ASCII file)
+# H) Image region to fit (xmin xmax ymin ymax)
+# I) Size of the convolution box (x y)
+# J) Magnitude photometric zeropoint
+# K) Plate scale (dx dy) [arcsec per pixel]
+# O) Display type (regular, curses, both)
+# P) Options: 0=normal run; 1,2=make model/imgblock & quit
+# S) Modify/create objects interactively
+#
+A) corsair/counts_NGC5557_WFPC2_F555W.fits,corsair/counts_NGC5557_WFPC2_F555W.fits,corsair/counts_NGC5557_WFPC2_F555W.fits
+A1) a,b,c              # Band labels
+A2) 4000,5000,6000     # Band wavelengths
+B) corsair/4D_counts_NGC5557_WFPC2_F555W_multi.fits
+C) none        
+D) corsair/PSF.fits,corsair/PSF.fits,corsair/PSF.fits
+E) 1
+F) corsair/mask.fits,corsair/mask.fits,corsair/mask.fits      	 
+G) none      
+H) 253 1209 217 1057
+I) 300 300       
+J) 0,0,0           
+K) 0.1 0.1
+O) regular     
+P) 0           
+S) 0           
+
+# core-Sersic function
+ 
+ 0) corser		   # object type
+ 1) 731 637 	  1 1	   # position x, y	  [pixel]			       
+ 3) -6.1  	  3	   #	mu(Rb)  	  [surface brightness mag. at Rb] 
+ 4) 3		  2	   #	 R_b		  [pixel]			       
+ 5) 4		  2	   #	 alpha  					  
+ 6) 0.12 	  3	   #	 gamma  					  
+ 7) 300 	  2	   #	 R_e		  [pixel]			       
+ 8) 5		  3	   # Sersic exponent (deVauc=4, expdisk=1)	       
+ 9) 0.87 	  1	   # axis ratio (b/a)					       
+10) 101  	  1	   # position angle (PA)  [Degrees: Up=0, Left=90]     
+C0) 1e-05,1e-04,1e-05	  2	   # diskyness(-)/boxyness(+)			       
+ Z) 0			   # leave in [1] or subtract [0] this comp from data? 

@@ -24,7 +24,7 @@ function test_galfitm {
     OUTLOG=${INFEEDME/feedme/log}.$VERSION
     rm -f */*.galfit.01 fit.log
     $GALFIT $INFEEDME &> $OUTPUTFULL
-    cat $OUTPUTFULL | tail -10 &> $OUTPUT
+    cat $OUTPUTFULL | tail -100 &> $OUTPUT
     mv -f */*.galfit.01 $OUTFEEDME &> /dev/null
     mv -f fit.log $OUTLOG &> /dev/null
     if [ $? -ne 0 ] ; then
@@ -58,6 +58,27 @@ done
 # Wrapping tests
 
 FEEDME_LIST=`ls wrapping/*${TESTNAME}*feedme`
+for FEEDME in $FEEDME_LIST
+do
+    test_galfitm $FEEDME $COMPARE 2> /dev/null
+done
+
+# Corsair tests
+
+SAVED_GALFIT=$GALFIT
+#GALFIT="galfit-corsair_v3_leopard -outsig -skyped 0.81 -skyrms 0.18"
+#test_galfitm corsair/corsair.feedme none 2> /dev/null
+GALFIT="$SAVED_GALFIT -outsig -skyped 0.81 -skyrms 0.18"
+FEEDME_LIST=`ls corsair/*${TESTNAME}*feedme`
+for FEEDME in $FEEDME_LIST
+do
+    test_galfitm $FEEDME $COMPARE 2> /dev/null
+done
+GALFIT=$SAVED_GALFIT
+
+# NGC 4261 tests
+
+FEEDME_LIST=`ls ngc4261/*${TESTNAME}*feedme`
 for FEEDME in $FEEDME_LIST
 do
     test_galfitm $FEEDME $COMPARE 2> /dev/null
