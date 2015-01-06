@@ -22,10 +22,12 @@ function test_galfitm {
     OUTPUTFULL=${INFEEDME/feedme/outputfull}.$VERSION
     OUTPUT=${INFEEDME/feedme/output}.$VERSION
     OUTLOG=${INFEEDME/feedme/log}.$VERSION
-    rm -f */*.galfit.01 fit.log
+    rm -f galfit.01 fit.log
+    rm -f */*galfit.01 fit.log
     $GALFIT $INFEEDME &> $OUTPUTFULL
     cat $OUTPUTFULL | tail -100 &> $OUTPUT
-    mv -f */*.galfit.01 $OUTFEEDME &> /dev/null
+    mv -f galfit.01 $OUTFEEDME &> /dev/null
+    mv -f */*galfit.01 $OUTFEEDME &> /dev/null
     mv -f fit.log $OUTLOG &> /dev/null
     if [ $? -ne 0 ] ; then
 	echo "BAD?: failed to run $GALFIT $INFEEDME"
