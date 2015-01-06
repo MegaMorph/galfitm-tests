@@ -1,0 +1,100 @@
+
+Iteration : 32    Chi2nu: 1.27354e+00   dChi2/Chi2: -1.85e-11   alamda: 1e+02     
+delchi2/sqrt(chi2nu): 3.59e-07    avghist: 1.81e-04  
+ a  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ b  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ c  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ a  : sky       : [ 47.00,  47.00]  4.79e-01  [0.00e+00]  [0.00e+00]
+ b  : sky       : [ 47.00,  47.00]     1.36  [0.00e+00]  [0.00e+00]
+ c  : sky       : [ 47.00,  47.00]  7.19e-01  [0.00e+00]  [0.00e+00]
+COUNTDOWN = 7 
+
+Worse chisq, increasing alamda by factor of 10 -> next step smaller
+
+Iteration : 33    Chi2nu: 1.27354e+00   dChi2/Chi2: 0.00e+00    alamda: 1e+03     
+delchi2/sqrt(chi2nu): 0.00e+00    avghist: 1.81e-04  
+ a  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ b  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ c  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ a  : sky       : [ 47.00,  47.00]  4.79e-01  [0.00e+00]  [0.00e+00]
+ b  : sky       : [ 47.00,  47.00]     1.36  [0.00e+00]  [0.00e+00]
+ c  : sky       : [ 47.00,  47.00]  7.19e-01  [0.00e+00]  [0.00e+00]
+COUNTDOWN = 6 
+
+Improved chisq
+
+Iteration : 34    Chi2nu: 1.27354e+00   dChi2/Chi2: -1.36e-11   alamda: 1e+02     
+delchi2/sqrt(chi2nu): 2.65e-07    avghist: 3.05e-05  
+ a  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ b  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ c  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ a  : sky       : [ 47.00,  47.00]  4.79e-01  [0.00e+00]  [0.00e+00]
+ b  : sky       : [ 47.00,  47.00]     1.36  [0.00e+00]  [0.00e+00]
+ c  : sky       : [ 47.00,  47.00]  7.19e-01  [0.00e+00]  [0.00e+00]
+COUNTDOWN = 5 
+
+Worse chisq, increasing alamda by factor of 10 -> next step smaller
+
+Iteration : 35    Chi2nu: 1.27354e+00   dChi2/Chi2: 0.00e+00    alamda: 1e+03     
+delchi2/sqrt(chi2nu): 0.00e+00    avghist: 3.05e-05  
+ a  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ b  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ c  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ a  : sky       : [ 47.00,  47.00]  4.79e-01  [0.00e+00]  [0.00e+00]
+ b  : sky       : [ 47.00,  47.00]     1.36  [0.00e+00]  [0.00e+00]
+ c  : sky       : [ 47.00,  47.00]  7.19e-01  [0.00e+00]  [0.00e+00]
+COUNTDOWN = 4 
+
+Improved chisq
+
+Iteration : 36    Chi2nu: 1.27354e+00   dChi2/Chi2: -8.88e-12   alamda: 1e+02     
+delchi2/sqrt(chi2nu): 1.73e-07    avghist: 1.25e-07  
+ a  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ b  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ c  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ a  : sky       : [ 47.00,  47.00]  4.79e-01  [0.00e+00]  [0.00e+00]
+ b  : sky       : [ 47.00,  47.00]     1.36  [0.00e+00]  [0.00e+00]
+ c  : sky       : [ 47.00,  47.00]  7.19e-01  [0.00e+00]  [0.00e+00]
+COUNTDOWN = 3 
+
+Worse chisq, increasing alamda by factor of 10 -> next step smaller
+
+Iteration : 37    Chi2nu: 1.27354e+00   dChi2/Chi2: 0.00e+00    alamda: 1e+03     
+delchi2/sqrt(chi2nu): 0.00e+00    avghist: 1.25e-07  
+ a  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ b  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ c  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ a  : sky       : [ 47.00,  47.00]  4.79e-01  [0.00e+00]  [0.00e+00]
+ b  : sky       : [ 47.00,  47.00]     1.36  [0.00e+00]  [0.00e+00]
+ c  : sky       : [ 47.00,  47.00]  7.19e-01  [0.00e+00]  [0.00e+00]
+COUNTDOWN = 2 
+
+Improved chisq
+
+Iteration : 38    Chi2nu: 1.27354e+00   dChi2/Chi2: -4.14e-12   alamda: 1e+02     
+delchi2/sqrt(chi2nu): 8.05e-08    avghist: 1.33e-07  
+ a  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ b  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ c  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ a  : sky       : [ 47.00,  47.00]  4.79e-01  [0.00e+00]  [0.00e+00]
+ b  : sky       : [ 47.00,  47.00]     1.36  [0.00e+00]  [0.00e+00]
+ c  : sky       : [ 47.00,  47.00]  7.19e-01  [0.00e+00]  [0.00e+00]
+COUNTDOWN = 1 
+
+Worse chisq, increasing alamda by factor of 10 -> next step smaller
+
+Iteration : 39    Chi2nu: 1.27354e+00   dChi2/Chi2: 0.00e+00    alamda: 1e+03     
+delchi2/sqrt(chi2nu): 0.00e+00    avghist: 1.33e-07  
+ a  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ b  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ c  : sersic    : (   46.53,    48.26)   22.97      2.64    4.12    0.86   -71.19
+ a  : sky       : [ 47.00,  47.00]  4.79e-01  [0.00e+00]  [0.00e+00]
+ b  : sky       : [ 47.00,  47.00]     1.36  [0.00e+00]  [0.00e+00]
+ c  : sky       : [ 47.00,  47.00]  7.19e-01  [0.00e+00]  [0.00e+00]
+COUNTDOWN = 0 
+
+
+
+Fit summary is now being saved into `fit.log'.
+
+
