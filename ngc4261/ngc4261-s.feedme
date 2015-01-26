@@ -1,0 +1,36 @@
+# Standard single-sersic fit
+===============================================================================
+# IMAGE and GALFIT CONTROL PARAMETERS
+A) ngc4261/NGC_4261-u.fits,ngc4261/NGC_4261-g.fits,ngc4261/NGC_4261-r.fits,ngc4261/NGC_4261-i.fits,ngc4261/NGC_4261-z.fits
+A1) u,g,r,i,z
+A2) 3543,4770,6231,7625,9134
+B) ngc4261/ngc4261-s.fits
+C) none
+D) ngc4261/PSF-u.fits,ngc4261/PSF-g.fits,ngc4261/PSF-r.fits,ngc4261/PSF-i.fits,ngc4261/PSF-z.fits
+E) 1
+F) ngc4261/NGC_4261-mask.fits,ngc4261/NGC_4261-mask.fits,ngc4261/NGC_4261-mask.fits,ngc4261/NGC_4261-mask.fits,ngc4261/NGC_4261-mask.fits
+G) ngc4261/constrain_s
+H) 150 450 150 450
+I) 145 145
+J) 28.1408,30.034,29.94,29.72,27.88
+K) 0.396 0.396
+O) regular
+P) 0
+
+# Object number: 1
+0) sky
+1) 35.7781,292.9783,646.1415,926.4883,493.7779   0
+2) 0   0
+3) 0   0
+Z) 0
+
+# Object number: 2
+0) sersic
+1) 290.853    1  #  position x
+2) 290.178    1  #  position y
+3) 16.231,14.357,13.555,13.12,12.851  5  #  magnitude	
+4) 19.5585    1  #  R_e [pix]
+5) 4.489      1  #  Sersic index n
+9) 0.8        1  #  axis ratio (b/a)  
+10) 10        1  #  position angle (PA) [deg: Up=0, Left=90]
+Z) 0

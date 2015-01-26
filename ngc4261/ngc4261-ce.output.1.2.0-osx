@@ -1,0 +1,100 @@
+ i  : corser    : (  290.85,   290.18)   15.42      0.34    1.17      -0.20      44.70       6.20    0.81   -20.95
+ z  : corser    : (  290.85,   290.18)   15.13      0.34    1.17      -0.20      44.70       6.20    0.81   -20.95
+ u  : sersic    : (  288.02,   289.03)   26.77    239.02   [1.00]   0.95    46.84
+ g  : sersic    : (  288.02,   289.03)  *32.84*   239.02   [1.00]   0.95    46.84
+ r  : sersic    : (  288.02,   289.03)  *33.22*   239.02   [1.00]   0.95    46.84
+ i  : sersic    : (  288.02,   289.03)   27.87    239.02   [1.00]   0.95    46.84
+ z  : sersic    : (  288.02,   289.03)  *31.33*   239.02   [1.00]   0.95    46.84
+COUNTDOWN = 3 
+
+PA wrapped for comp 3 (objtype: sersic ): -2231590.26 to 49.74
+One or more parameters tried to exceed hard limits
+One or more parameters tried to exceed user-specified constraints
+Parameter(s) constrained by hard limits or user-specified constraint(s)
+Improved chisq
+constr_alamda_factor: 1000.000
+
+Iteration : 140   Chi2nu: 1.12370e+00   dChi2/Chi2: -3.80e-06   alamda: 1e+03     
+delchi2/sqrt(chi2nu): 1.78e+00    avghist: 1.12e+00  
+ u  : sky       : [300.00, 300.00]   [35.78]  [0.00e+00]  [0.00e+00]
+ g  : sky       : [300.00, 300.00]  [292.98]  [0.00e+00]  [0.00e+00]
+ r  : sky       : [300.00, 300.00]  [646.14]  [0.00e+00]  [0.00e+00]
+ i  : sky       : [300.00, 300.00]  [926.49]  [0.00e+00]  [0.00e+00]
+ z  : sky       : [300.00, 300.00]  [493.78]  [0.00e+00]  [0.00e+00]
+ u  : corser    : (  290.85,   290.18)   18.64      0.34    1.17      -0.20      44.70       6.20    0.81   -20.95
+ g  : corser    : (  290.85,   290.18)   16.70      0.34    1.17      -0.20      44.70       6.20    0.81   -20.95
+ r  : corser    : (  290.85,   290.18)   15.88      0.34    1.17      -0.20      44.70       6.20    0.81   -20.95
+ i  : corser    : (  290.85,   290.18)   15.42      0.34    1.17      -0.20      44.70       6.20    0.81   -20.95
+ z  : corser    : (  290.85,   290.18)   15.13      0.34    1.17      -0.20      44.70       6.20    0.81   -20.95
+ u  : sersic    : (  288.02,   289.03)   26.77    239.02   [1.00]   0.95    49.74
+ g  : sersic    : (  288.02,   289.03)  *32.84*   239.02   [1.00]   0.95    49.74
+ r  : sersic    : (  288.02,   289.03)  *33.22*   239.02   [1.00]   0.95    49.74
+ i  : sersic    : (  288.02,   289.03)   27.87    239.02   [1.00]   0.95    49.74
+ z  : sersic    : (  288.02,   289.03)  *31.33*   239.02   [1.00]   0.95    49.74
+COUNTDOWN = 2 
+
+PA wrapped for comp 3 (objtype: sersic ): -7509.44 to 50.56
+One or more parameters tried to exceed hard limits
+One or more parameters tried to exceed user-specified constraints
+Parameter(s) constrained by hard limits or user-specified constraint(s)
+Improved chisq
+constr_alamda_factor: 1.000
+
+Iteration : 141   Chi2nu: 1.12370e+00   dChi2/Chi2: -1.02e-07   alamda: 1e+03     
+delchi2/sqrt(chi2nu): 4.80e-02    avghist: 1.08e+00  
+ u  : sky       : [300.00, 300.00]   [35.78]  [0.00e+00]  [0.00e+00]
+ g  : sky       : [300.00, 300.00]  [292.98]  [0.00e+00]  [0.00e+00]
+ r  : sky       : [300.00, 300.00]  [646.14]  [0.00e+00]  [0.00e+00]
+ i  : sky       : [300.00, 300.00]  [926.49]  [0.00e+00]  [0.00e+00]
+ z  : sky       : [300.00, 300.00]  [493.78]  [0.00e+00]  [0.00e+00]
+ u  : corser    : (  290.85,   290.18)   18.64      0.34    1.17      -0.20      44.70       6.20    0.81   -20.95
+ g  : corser    : (  290.85,   290.18)   16.70      0.34    1.17      -0.20      44.70       6.20    0.81   -20.95
+ r  : corser    : (  290.85,   290.18)   15.88      0.34    1.17      -0.20      44.70       6.20    0.81   -20.95
+ i  : corser    : (  290.85,   290.18)   15.42      0.34    1.17      -0.20      44.70       6.20    0.81   -20.95
+ z  : corser    : (  290.85,   290.18)   15.13      0.34    1.17      -0.20      44.70       6.20    0.81   -20.95
+ u  : sersic    : (  288.02,   289.03)   26.77    239.02   [1.00]   0.95    50.56
+ g  : sersic    : (  288.02,   289.03)  *32.84*   239.02   [1.00]   0.95    50.56
+ r  : sersic    : (  288.02,   289.03)  *33.22*   239.02   [1.00]   0.95    50.56
+ i  : sersic    : (  288.02,   289.03)   27.87    239.02   [1.00]   0.95    50.56
+ z  : sersic    : (  288.02,   289.03)  *31.33*   239.02   [1.00]   0.95    50.56
+COUNTDOWN = 1 
+
+PA wrapped for comp 3 (objtype: sersic ): -7722.67 to 17.33
+One or more parameters tried to exceed hard limits
+One or more parameters tried to exceed user-specified constraints
+Parameter(s) constrained by hard limits or user-specified constraint(s)
+Improved chisq
+constr_alamda_factor: 0.100
+
+Iteration : 142   Chi2nu: 1.12370e+00   dChi2/Chi2: -1.01e-07   alamda: 1e+02     
+delchi2/sqrt(chi2nu): 4.75e-02    avghist: 1.04e+00  
+ u  : sky       : [300.00, 300.00]   [35.78]  [0.00e+00]  [0.00e+00]
+ g  : sky       : [300.00, 300.00]  [292.98]  [0.00e+00]  [0.00e+00]
+ r  : sky       : [300.00, 300.00]  [646.14]  [0.00e+00]  [0.00e+00]
+ i  : sky       : [300.00, 300.00]  [926.49]  [0.00e+00]  [0.00e+00]
+ z  : sky       : [300.00, 300.00]  [493.78]  [0.00e+00]  [0.00e+00]
+ u  : corser    : (  290.85,   290.18)   18.64      0.34    1.17      -0.20      44.70       6.20    0.81   -20.95
+ g  : corser    : (  290.85,   290.18)   16.70      0.34    1.17      -0.20      44.70       6.20    0.81   -20.95
+ r  : corser    : (  290.85,   290.18)   15.88      0.34    1.17      -0.20      44.70       6.20    0.81   -20.95
+ i  : corser    : (  290.85,   290.18)   15.42      0.34    1.17      -0.20      44.70       6.20    0.81   -20.95
+ z  : corser    : (  290.85,   290.18)   15.13      0.34    1.17      -0.20      44.70       6.20    0.81   -20.95
+ u  : sersic    : (  288.02,   289.03)   26.77    239.02   [1.00]   0.95    17.33
+ g  : sersic    : (  288.02,   289.03)  *32.84*   239.02   [1.00]   0.95    17.33
+ r  : sersic    : (  288.02,   289.03)  *33.22*   239.02   [1.00]   0.95    17.33
+ i  : sersic    : (  288.02,   289.03)   27.87    239.02   [1.00]   0.95    17.33
+ z  : sersic    : (  288.02,   289.03)  *31.33*   239.02   [1.00]   0.95    17.33
+COUNTDOWN = 0 
+
+
+
+Fit summary is now being saved into `fit.log'.
+
+================================================================================
+WARNING: Possible numerical problem detected with one or more output 
+         parameters enclosed in *...*.  The solution is likely to be not 
+         reliable.  Rerun fit by holding problematic parameters fixed 
+         temporarily or setting them to other initial values.
+================================================================================
+
+
+

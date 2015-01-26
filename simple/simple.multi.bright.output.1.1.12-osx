@@ -1,0 +1,100 @@
+ b  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ c  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ a  : sky       : [ 47.00,  47.00]  -7.91e-01  [0.00e+00]  [0.00e+00]
+ b  : sky       : [ 47.00,  47.00]     4.13  [0.00e+00]  [0.00e+00]
+ c  : sky       : [ 47.00,  47.00]  -7.82e-01  [0.00e+00]  [0.00e+00]
+COUNTDOWN = 6 
+
+One or more parameters tried to exceed user-specified constraints
+Parameter(s) constrained by hard limits or user-specified constraint(s)
+Improved chisq
+constr_alamda_factor: 0.100
+
+Iteration : 47    Chi2nu: 5.42648e+01   dChi2/Chi2: -4.99e-09   alamda: 1e+01     
+delchi2/sqrt(chi2nu): 9.49e-04    avghist: 4.14e-01  
+ a  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ b  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ c  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ a  : sky       : [ 47.00,  47.00]  -7.91e-01  [0.00e+00]  [0.00e+00]
+ b  : sky       : [ 47.00,  47.00]     4.13  [0.00e+00]  [0.00e+00]
+ c  : sky       : [ 47.00,  47.00]  -7.82e-01  [0.00e+00]  [0.00e+00]
+COUNTDOWN = 5 
+
+One or more parameters tried to exceed user-specified constraints
+Parameter(s) constrained by hard limits or user-specified constraint(s)
+Improved chisq
+constr_alamda_factor: 1.000
+
+Iteration : 48    Chi2nu: 5.42648e+01   dChi2/Chi2: -3.24e-08   alamda: 1e+01     
+delchi2/sqrt(chi2nu): 6.16e-03    avghist: 4.14e-01  
+ a  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ b  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ c  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ a  : sky       : [ 47.00,  47.00]  -7.91e-01  [0.00e+00]  [0.00e+00]
+ b  : sky       : [ 47.00,  47.00]     4.13  [0.00e+00]  [0.00e+00]
+ c  : sky       : [ 47.00,  47.00]  -7.82e-01  [0.00e+00]  [0.00e+00]
+COUNTDOWN = 4 
+
+One or more parameters tried to exceed user-specified constraints
+Parameter(s) constrained by hard limits or user-specified constraint(s)
+Improved chisq
+constr_alamda_factor: 0.010
+
+Iteration : 49    Chi2nu: 5.42648e+01   dChi2/Chi2: -2.73e-08   alamda: 1e-01     
+delchi2/sqrt(chi2nu): 5.19e-03    avghist: 4.14e-01  
+ a  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ b  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ c  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ a  : sky       : [ 47.00,  47.00]  -7.91e-01  [0.00e+00]  [0.00e+00]
+ b  : sky       : [ 47.00,  47.00]     4.13  [0.00e+00]  [0.00e+00]
+ c  : sky       : [ 47.00,  47.00]  -7.82e-01  [0.00e+00]  [0.00e+00]
+COUNTDOWN = 3 
+
+One or more parameters tried to exceed user-specified constraints
+Parameter(s) constrained by hard limits or user-specified constraint(s)
+Worse chisq, increasing alamda by factor of 10 -> next step smaller
+
+Iteration : 50    Chi2nu: 5.42648e+01   dChi2/Chi2: 0.00e+00    alamda: 1e+00     
+delchi2/sqrt(chi2nu): 0.00e+00    avghist: 4.12e-01  
+ a  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ b  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ c  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ a  : sky       : [ 47.00,  47.00]  -7.91e-01  [0.00e+00]  [0.00e+00]
+ b  : sky       : [ 47.00,  47.00]     4.13  [0.00e+00]  [0.00e+00]
+ c  : sky       : [ 47.00,  47.00]  -7.82e-01  [0.00e+00]  [0.00e+00]
+COUNTDOWN = 2 
+
+One or more parameters tried to exceed user-specified constraints
+Parameter(s) constrained by hard limits or user-specified constraint(s)
+Worse chisq, increasing alamda by factor of 10 -> next step smaller
+
+Iteration : 51    Chi2nu: 5.42648e+01   dChi2/Chi2: 0.00e+00    alamda: 1e+01     
+delchi2/sqrt(chi2nu): 0.00e+00    avghist: 4.12e-01  
+ a  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ b  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ c  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ a  : sky       : [ 47.00,  47.00]  -7.91e-01  [0.00e+00]  [0.00e+00]
+ b  : sky       : [ 47.00,  47.00]     4.13  [0.00e+00]  [0.00e+00]
+ c  : sky       : [ 47.00,  47.00]  -7.82e-01  [0.00e+00]  [0.00e+00]
+COUNTDOWN = 1 
+
+One or more parameters tried to exceed user-specified constraints
+Parameter(s) constrained by hard limits or user-specified constraint(s)
+Improved chisq
+constr_alamda_factor: 1.000
+
+Iteration : 52    Chi2nu: 5.42648e+01   dChi2/Chi2: -2.30e-08   alamda: 1e+01     
+delchi2/sqrt(chi2nu): 4.37e-03    avghist: 4.12e-01  
+ a  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ b  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ c  : sersic    : (   46.53,    48.27)   21.55      2.75    4.51    0.85   -70.77
+ a  : sky       : [ 47.00,  47.00]  -7.91e-01  [0.00e+00]  [0.00e+00]
+ b  : sky       : [ 47.00,  47.00]     4.13  [0.00e+00]  [0.00e+00]
+ c  : sky       : [ 47.00,  47.00]  -7.82e-01  [0.00e+00]  [0.00e+00]
+COUNTDOWN = 0 
+
+
+
+Fit summary is now being saved into `fit.log'.
+
+

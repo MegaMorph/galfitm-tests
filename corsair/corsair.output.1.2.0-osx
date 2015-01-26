@@ -1,0 +1,100 @@
+
+Iteration : 14    Chi2nu: 1.72793e+01   dChi2/Chi2: -6.06e-11   alamda: 1e-06     
+delchi2/sqrt(chi2nu): 1.24e-04    avghist: 1.30e-01  
+ x  : corser    : (  730.82,   637.12)   -6.10      3.35   10.06       0.38     341.82       4.95    0.82   -89.51
+        c0      :     -0.08 
+COUNTDOWN = 11 
+
+Worse chisq, increasing alamda by factor of 10 -> next step smaller
+
+Iteration : 15    Chi2nu: 1.72793e+01   dChi2/Chi2: 0.00e+00    alamda: 1e-05     
+delchi2/sqrt(chi2nu): 0.00e+00    avghist: 7.17e-02  
+ x  : corser    : (  730.82,   637.12)   -6.10      3.35   10.06       0.38     341.82       4.95    0.82   -89.51
+        c0      :     -0.08 
+COUNTDOWN = 10 
+
+Worse chisq, increasing alamda by factor of 10 -> next step smaller
+
+Iteration : 16    Chi2nu: 1.72793e+01   dChi2/Chi2: 0.00e+00    alamda: 1e-04     
+delchi2/sqrt(chi2nu): 0.00e+00    avghist: 7.17e-02  
+ x  : corser    : (  730.82,   637.12)   -6.10      3.35   10.06       0.38     341.82       4.95    0.82   -89.51
+        c0      :     -0.08 
+COUNTDOWN = 9 
+
+Improved chisq
+
+Iteration : 17    Chi2nu: 1.72793e+01   dChi2/Chi2: -1.01e-10   alamda: 1e-05     
+delchi2/sqrt(chi2nu): 2.08e-04    avghist: 7.17e-02  
+ x  : corser    : (  730.82,   637.12)   -6.10      3.35   10.04       0.38     341.82       4.95    0.82   -89.51
+        c0      :     -0.08 
+COUNTDOWN = 8 
+
+Worse chisq, increasing alamda by factor of 10 -> next step smaller
+
+Iteration : 18    Chi2nu: 1.72793e+01   dChi2/Chi2: 0.00e+00    alamda: 1e-04     
+delchi2/sqrt(chi2nu): 0.00e+00    avghist: 7.17e-02  
+ x  : corser    : (  730.82,   637.12)   -6.10      3.35   10.04       0.38     341.82       4.95    0.82   -89.51
+        c0      :     -0.08 
+COUNTDOWN = 7 
+
+Worse chisq, increasing alamda by factor of 10 -> next step smaller
+
+Iteration : 19    Chi2nu: 1.72793e+01   dChi2/Chi2: 0.00e+00    alamda: 1e-03     
+delchi2/sqrt(chi2nu): 0.00e+00    avghist: 7.05e-02  
+ x  : corser    : (  730.82,   637.12)   -6.10      3.35   10.04       0.38     341.82       4.95    0.82   -89.51
+        c0      :     -0.08 
+COUNTDOWN = 6 
+
+Improved chisq
+
+Iteration : 20    Chi2nu: 1.72793e+01   dChi2/Chi2: -2.26e-10   alamda: 1e-04     
+delchi2/sqrt(chi2nu): 4.65e-04    avghist: 7.06e-02  
+ x  : corser    : (  730.82,   637.12)   -6.10      3.35   10.05       0.38     341.82       4.95    0.82   -89.51
+        c0      :     -0.08 
+COUNTDOWN = 5 
+
+Worse chisq, increasing alamda by factor of 10 -> next step smaller
+
+Iteration : 21    Chi2nu: 1.72793e+01   dChi2/Chi2: 0.00e+00    alamda: 1e-03     
+delchi2/sqrt(chi2nu): 0.00e+00    avghist: 7.06e-02  
+ x  : corser    : (  730.82,   637.12)   -6.10      3.35   10.05       0.38     341.82       4.95    0.82   -89.51
+        c0      :     -0.08 
+COUNTDOWN = 4 
+
+Worse chisq, increasing alamda by factor of 10 -> next step smaller
+
+Iteration : 22    Chi2nu: 1.72793e+01   dChi2/Chi2: 0.00e+00    alamda: 1e-02     
+delchi2/sqrt(chi2nu): 0.00e+00    avghist: 2.85e-03  
+ x  : corser    : (  730.82,   637.12)   -6.10      3.35   10.05       0.38     341.82       4.95    0.82   -89.51
+        c0      :     -0.08 
+COUNTDOWN = 3 
+
+Worse chisq, increasing alamda by factor of 10 -> next step smaller
+
+Iteration : 23    Chi2nu: 1.72793e+01   dChi2/Chi2: 0.00e+00    alamda: 1e-01     
+delchi2/sqrt(chi2nu): 0.00e+00    avghist: 7.98e-05  
+ x  : corser    : (  730.82,   637.12)   -6.10      3.35   10.05       0.38     341.82       4.95    0.82   -89.51
+        c0      :     -0.08 
+COUNTDOWN = 2 
+
+Worse chisq, increasing alamda by factor of 10 -> next step smaller
+
+Iteration : 24    Chi2nu: 1.72793e+01   dChi2/Chi2: 0.00e+00    alamda: 1e+00     
+delchi2/sqrt(chi2nu): 0.00e+00    avghist: 6.73e-05  
+ x  : corser    : (  730.82,   637.12)   -6.10      3.35   10.05       0.38     341.82       4.95    0.82   -89.51
+        c0      :     -0.08 
+COUNTDOWN = 1 
+
+Worse chisq, increasing alamda by factor of 10 -> next step smaller
+
+Iteration : 25    Chi2nu: 1.72793e+01   dChi2/Chi2: 0.00e+00    alamda: 1e+01     
+delchi2/sqrt(chi2nu): 0.00e+00    avghist: 6.73e-05  
+ x  : corser    : (  730.82,   637.12)   -6.10      3.35   10.05       0.38     341.82       4.95    0.82   -89.51
+        c0      :     -0.08 
+COUNTDOWN = 0 
+
+
+
+Fit summary is now being saved into `fit.log'.
+
+

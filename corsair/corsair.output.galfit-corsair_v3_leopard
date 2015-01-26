@@ -1,0 +1,100 @@
+
+-----> DEBUG:: Attemping corser model with:
+ corser    : (  477.82,   420.12)   -6.10      3.34    9.55 0.38 341.84 4.95    0.82   -89.51
+   c0      :     -0.08 
+<----- DEBUG
+
+Iteration : 7     Chi2nu: 1.728e+01     dChi2/Chi2: 3.37e-08    alamda: 1e-05     
+ corser    : (  730.82,   637.12)   -6.10      3.36   10.25 0.38 341.80 4.95    0.82   -89.51
+   c0      :     -0.08 
+COUNTDOWN = 8 
+
+-----> DEBUG:: Attemping corser model with:
+ corser    : (  477.82,   420.12)   -6.10      3.34    9.62 0.38 341.84 4.95    0.82   -89.51
+   c0      :     -0.08 
+<----- DEBUG
+
+Iteration : 8     Chi2nu: 1.728e+01     dChi2/Chi2: 3.37e-08    alamda: 1e-04     
+ corser    : (  730.82,   637.12)   -6.10      3.36   10.25 0.38 341.80 4.95    0.82   -89.51
+   c0      :     -0.08 
+COUNTDOWN = 7 
+
+-----> DEBUG:: Attemping corser model with:
+ corser    : (  477.82,   420.12)   -6.10      3.35    9.85 0.38 341.84 4.95    0.82   -89.51
+   c0      :     -0.08 
+<----- DEBUG
+
+Iteration : 9     Chi2nu: 1.728e+01     dChi2/Chi2: 6.12e-09    alamda: 1e-05     
+ corser    : (  730.82,   637.12)   -6.10      3.35    9.85 0.38 341.84 4.95    0.82   -89.51
+   c0      :     -0.08 
+COUNTDOWN = 6 
+
+-----> DEBUG:: Attemping corser model with:
+ corser    : (  477.82,   420.12)   -6.10      3.36   10.50 0.38 341.80 4.95    0.82   -89.51
+   c0      :     -0.08 
+<----- DEBUG
+
+Iteration : 10    Chi2nu: 1.728e+01     dChi2/Chi2: 6.12e-09    alamda: 1e-04     
+ corser    : (  730.82,   637.12)   -6.10      3.35    9.85 0.38 341.84 4.95    0.82   -89.51
+   c0      :     -0.08 
+COUNTDOWN = 5 
+
+-----> DEBUG:: Attemping corser model with:
+ corser    : (  477.82,   420.12)   -6.10      3.36   10.29 0.38 341.80 4.95    0.82   -89.51
+   c0      :     -0.08 
+<----- DEBUG
+
+Iteration : 11    Chi2nu: 1.728e+01     dChi2/Chi2: 6.12e-09    alamda: 1e-03     
+ corser    : (  730.82,   637.12)   -6.10      3.35    9.85 0.38 341.84 4.95    0.82   -89.51
+   c0      :     -0.08 
+COUNTDOWN = 4 
+
+-----> DEBUG:: Attemping corser model with:
+ corser    : (  477.82,   420.12)   -6.10      3.35   10.04 0.38 341.82 4.95    0.82   -89.51
+   c0      :     -0.08 
+<----- DEBUG
+
+Iteration : 12    Chi2nu: 1.728e+01     dChi2/Chi2: -3.04e-07   alamda: 1e-04     
+ corser    : (  730.82,   637.12)   -6.10      3.35   10.04 0.38 341.82 4.95    0.82   -89.51
+   c0      :     -0.08 
+COUNTDOWN = 3 
+
+-----> DEBUG:: Attemping corser model with:
+ corser    : (  477.82,   420.12)   -6.10      3.35   10.04 0.38 341.82 4.95    0.82   -89.51
+   c0      :     -0.08 
+<----- DEBUG
+
+Iteration : 13    Chi2nu: 1.728e+01     dChi2/Chi2: 2.82e-08    alamda: 1e-05     
+ corser    : (  730.82,   637.12)   -6.10      3.35   10.04 0.38 341.82 4.95    0.82   -89.51
+   c0      :     -0.08 
+COUNTDOWN = 2 
+
+-----> DEBUG:: Attemping corser model with:
+ corser    : (  477.82,   420.12)   -6.10      3.35   10.06 0.38 341.82 4.95    0.82   -89.51
+   c0      :     -0.08 
+<----- DEBUG
+
+Iteration : 14    Chi2nu: 1.728e+01     dChi2/Chi2: 2.82e-08    alamda: 1e-04     
+ corser    : (  730.82,   637.12)   -6.10      3.35   10.04 0.38 341.82 4.95    0.82   -89.51
+   c0      :     -0.08 
+COUNTDOWN = 1 
+
+-----> DEBUG:: Attemping corser model with:
+ corser    : (  477.82,   420.12)   -6.10      3.35   10.05 0.38 341.82 4.95    0.82   -89.51
+   c0      :     -0.08 
+<----- DEBUG
+
+Iteration : 15    Chi2nu: 1.728e+01     dChi2/Chi2: 2.82e-08    alamda: 1e-03     
+ corser    : (  730.82,   637.12)   -6.10      3.35   10.04 0.38 341.82 4.95    0.82   -89.51
+   c0      :     -0.08 
+COUNTDOWN = 0 
+
+
+Fit summary is now being saved into `fit.log'.
+
+
+-----> DEBUG:: Attemping corser model with:
+ corser    : ( [477.82], [420.12]) [-6.10]    [3.35] [10.04] [0.38] [341.82] [4.95]  [0.82] [-89.51]
+   c0      :    [-0.08] 
+<----- DEBUG
+

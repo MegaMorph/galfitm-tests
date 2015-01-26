@@ -1,0 +1,15 @@
+-----------------------------------------------------------------------------
+
+Input images    : simple/gal.fits,simple/galshift.fits,simple/gal.fits [1:93,1:93] 
+Init. par. file : simple/simple.multi.shift.feedme 
+Restart file    : galfit.01 
+Output image    : simple/imgblock.multi.shift.fits 
+
+ sersic    : (   46.80,    48.27)   23.02    2.53    3.78    0.85  -72.51
+               (  0.01,     0.01)    0.01    0.01    0.01    0.00    0.04
+ sky       : [ 47.00,  47.00]  5.98e-01  [0.00e+00]  [0.00e+00]
+                                0.00e+00  [0.00e+00]  [1.28e-01]
+ Chi^2 = 24161.76712,  ndof = 25735
+ Chi^2/nu = 0.939 
+
+-----------------------------------------------------------------------------

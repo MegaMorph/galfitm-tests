@@ -1,0 +1,29 @@
+-----------------------------------------------------------------------------
+
+Input images    : wrapping/models/modelWi_1u_f0.fits,wrapping/models/modelWi_2g_f0.fits,wrapping/models/modelWi_3r_f0.fits,wrapping/models/modelWi_4i_f0.fits,wrapping/models/modelWi_5z_f0.fits,wrapping/models/modelWi_6Y_f0.fits,wrapping/models/modelWi_7J_f0.fits,wrapping/models/modelWi_8H_f0.fits,wrapping/models/modelWi_9K_f0.fits [1:200,1:200] 
+Init. par. file : wrapping/wrapping3.feedme 
+Restart file    : wrapping/wrapping3.galfit.01 
+Output image    : wrapping/wrapping3.fits 
+
+ u  : sersic    : (  100.00,   100.01)   17.95     10.67    2.26    0.67   -84.76
+                  (    0.01,     0.00)    0.00      0.00    0.00    0.00     0.00
+ g  : sersic    : (  100.00,   100.01)   16.95     10.56    2.23    0.67   -84.76
+                  (    0.01,     0.00)    0.00      0.00    0.00    0.00     0.00
+ r  : sersic    : (  100.00,   100.01)   16.06     10.43    2.20    0.67   -84.76
+                  (    0.01,     0.00)    0.00      0.00    0.00    0.00     0.00
+ i  : sersic    : (  100.00,   100.01)   15.57     10.32    2.18    0.67   -84.76
+                  (    0.01,     0.00)    0.00      0.00    0.00    0.00     0.00
+ z  : sersic    : (  100.00,   100.01)   15.31     10.21    2.15    0.67   -84.76
+                  (    0.01,     0.00)    0.00      0.00    0.00    0.00     0.00
+ Y  : sersic    : (  100.00,   100.01)   15.21     10.13    2.13    0.67   -84.76
+                  (    0.01,     0.00)    0.00      0.00    0.00    0.00     0.00
+ J  : sersic    : (  100.00,   100.01)   15.04      9.99    2.11    0.67   -84.76
+                  (    0.01,     0.00)    0.00      0.00    0.00    0.00     0.00
+ H  : sersic    : (  100.00,   100.01)   14.73      9.78    2.07    0.67   -84.76
+                  (    0.01,     0.00)    0.00      0.00    0.00    0.00     0.00
+ K  : sersic    : (  100.00,   100.01)   14.62      9.58    2.04    0.67   -84.76
+                  (    0.01,     0.00)    0.00      0.00    0.00    0.00     0.00
+ Chi^2 = 367904.61617,  ndof = 359983
+ Chi^2/nu = 1.022 
+
+-----------------------------------------------------------------------------

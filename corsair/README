@@ -1,0 +1,51 @@
+ ====================
+|| Example file set ||
+ ====================
+ 
+This is an example file set for a quick test of GALFIT-CORSAIR fitting a core-Sersic model.
+
+The image data have been obtained from the Hubble Legacy Archive (HLA) for NGC 5557, in the
+F555W filter.
+ 
+For any question, contact:
+    pbonfini@swin.edu.au
+    
+    
+Files:
+------
+
+> counts_NGC5557_WFPC2_F555W.fits
+   
+  HLA image, converted to ADUs (from electrons/second), using the header information.
+  
+> INPUT
+
+  Input GALFIT file reporting first-guess model parameters.
+  
+> mask.fits
+
+  Mask image.  
+
+> PSF.fits
+
+  Artificial PSF image, built with the Tiny Tim (Krist et al. 2011) software.
+  
+> sigma.fits
+
+  Sigma image obtained by running GALFIT with the command-line parameters:
+      -skyped 0.81
+      -skyrms 0.18  
+
+  See Bonfini (2014, PASP) for the estimation of the sky level in HLA images
+
+> 4D_counts_NGC5557_WFPC2_F555W.fits
+
+  GALFIT image/model/residuals four-dimensional output FITS file.
+
+
+Run the test:
+-------------     
+
+Coherently with the standard GALFIT procedure, simply type in a terminal:
+
+%> ./galfit-3.0.5-corser_v3 -outsig INPUT -skyped 0.81 -skyrms 0.18  
