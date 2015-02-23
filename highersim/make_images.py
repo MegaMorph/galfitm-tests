@@ -20,12 +20,14 @@ import os, sys, getopt
         where [arch] is 'linux' or 'osx',
         defaulting to linux if not specified.
 
+        Run from each folder, e.g. spiral, bending, etc.
+
 """
 
 noiselevels = [1, 5, 10, 50, 100]
 
 def make_images(arch='linux'):
-    noise = [pyfits.getdata('n%i.fits'%i) for i in noiselevels]
+    noise = [pyfits.getdata('../n%i.fits'%i) for i in noiselevels]
 
     gals = glob('galfit.gal*')
     for g in gals:

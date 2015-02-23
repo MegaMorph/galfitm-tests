@@ -1,9 +1,9 @@
 ================================================================================
 # IMAGE and GALFIT CONTROL PARAMETERS
 A) gal.fits            # Input data image (FITS file)
-B) gal5.fits           # Output data image block
+B) gal7.fits           # Output data image block
 C) none                # Sigma image name (made from data if blank or "none") 
-D) psf.fits #          # Input PSF image and (optional) diffusion kernel
+D) ../psf.fits #          # Input PSF image and (optional) diffusion kernel
 E) 1                   # PSF fine sampling factor relative to data 
 F) none                # Bad pixel mask (FITS image or ASCII coord list)
 G) none                # File with parameter constraints (ASCII file) 
@@ -68,6 +68,7 @@ P) 0                   # Choose: 0=optimize, 1=model, 2=imgblock, 3=subcomps
  8) 0.0000      0          #     ----- 
  9) 0.5         1          #  Axis ratio (b/a)  
 10) 0.0         1          #  Position angle (PA) [deg: Up=0, Left=90]
+F1) 0.2		90	   # Offset core
 Ti) 4			   # Inner truncation by component 4
 
 R0) powerlaw           # PA rotation function (power, log, none)
@@ -84,6 +85,18 @@ T0) radial                 #  truncation
 T4) 35.      1          #  Break radius (99% normal flux)    [pixels]
 T5) 35.      1          #  Softening length (1% normal flux) [pixels]
 T9)  1.0        1          #  Axis ratio (optional)
+
+# Component number: 5
+ 0) sersic                 #  Component type
+ 1) 275.0  275.0 1 1       #  Position x, y
+ 3) 12.00       1          #  Integrated magnitude 
+ 4) 2.         1          #  R_e (effective radius)   [pix]
+ 5) 8.0         1          #  Sersic index n (de Vaucouleurs n=4) 
+ 6) 0.0000      0          #     ----- 
+ 7) 0.0000      0          #     ----- 
+ 8) 0.0000      0          #     ----- 
+ 9) 0.5         1          #  Axis ratio (b/a)  
+10) 45.0         1          #  Position angle (PA) [deg: Up=0, Left=90]
 
 
 
