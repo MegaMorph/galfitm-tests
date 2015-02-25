@@ -44,7 +44,7 @@ P) 0                   # Choose: 0=optimize, 1=model, 2=imgblock, 3=subcomps
 10) 0.0         1          #  Position angle (PA) [deg: Up=0, Left=90]
 #B1) 0.00        0          # Bending mode 1 (shear)
 #B2) 0.00        0          # Bending mode 2 (banana shape)
-B3) 0.50        1          # Bending mode 3 (S-shape)
+B3) 5.00        1          # Bending mode 3 (S-shape)
  Z) 0                      #  Skip this model in output image?  (yes=1, no=0)
 
 

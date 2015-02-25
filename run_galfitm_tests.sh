@@ -85,3 +85,18 @@ for FEEDME in $FEEDME_LIST
 do
     test_galfitm $FEEDME $COMPARE 2> /dev/null
 done
+
+# Higher tests
+
+SAVED_GALFIT=$GALFIT
+GALFIT="../../$GALFIT"
+FEEDME_LIST=`ls highersim/*${TESTNAME}*/feedme*n*`
+for FEEDME in $FEEDME_LIST
+do
+    DIR=$(dirname "${FEEDME}")
+    FEEDME=$(basename "${FEEDME}")
+    cd $DIR
+    test_galfitm $FEEDME $COMPARE 2> /dev/null
+    cd -
+done
+GALFIT=$SAVED_GALFIT

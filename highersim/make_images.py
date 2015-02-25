@@ -24,7 +24,11 @@ import os, sys, getopt
 
 """
 
-noiselevels = [1, 5, 10, 50, 100]
+#noiselevels = [1, 5, 10, 50, 100]
+#nonparams = [False, True]
+
+noiselevels = [1]
+nonparams = [False]
 
 def make_images(arch='linux'):
     noise = [pyfits.getdata('../n%i.fits'%i) for i in noiselevels]
@@ -55,7 +59,7 @@ def make_images(arch='linux'):
 def make_noise_feedme(feedme):
     feedmelines = file(feedme).readlines()
     for i, n in enumerate(noiselevels):
-        for nonparam in (False, True):
+        for nonparam in nonparams:
             if nonparam:
                 np = 'n'
             else:
