@@ -34,22 +34,22 @@ U) 0		       # Turn on nonparam with default options
 
 # Component number: 1
  0) sersic                 #  Component type
- 1) 249.0  251.0 1 1       #  Position x, y
- 3) 9.50       1          #  Integrated magnitude 
- 4) 10.         1          #  R_e (effective radius)   [pix]
- 5) 4.0         1          #  Sersic index n (de Vaucouleurs n=4) 
+ 1) 250.0  250.0 1 1       #  Position x, y
+ 3) 10.0        1          #  Integrated magnitude 
+ 4) 20.         1          #  R_e (effective radius)   [pix]
+ 5) 2.5         1          #  Sersic index n (de Vaucouleurs n=4) 
  6) 0.0000      0          #     ----- 
  7) 0.0000      0          #     ----- 
  8) 0.0000      0          #     ----- 
  9) 0.7         1          #  Axis ratio (b/a)  
 10) 0.0         1          #  Position angle (PA) [deg: Up=0, Left=90]
 R0) powerlaw	       # PA rotation function (power, log, none)
-R1) 20.        1       # bar radius  [pixels]
-R2) 150.       1       # 96% asymptotic radius (i.e. at 96% of tanh rotation)
-R3) 200.       1       # cumul. coord. rotation out to asymp. radius [degrees] 
-R4) 0.3	       1       # asymptotic spiral arm powerlaw 
-R9) 0.3	       1       # inclination to L.o.S. (controls projected axis ratio)
-R10) 50.       1       # sky position angle
+R1) 12.        1       # bar radius  [pixels]
+R2) 90.       1       # 96% asymptotic radius (i.e. at 96% of tanh rotation)
+R3) 250.       1       # cumul. coord. rotation out to asymp. radius [degrees] 
+R4) 0.4	       1       # asymptotic spiral arm powerlaw 
+R9) 10.	       1       # inclination to L.o.S. (controls projected axis ratio)
+R10) 45.       1       # sky position angle
  Z) 0                      #  Skip this model in output image?  (yes=1, no=0)
 
 

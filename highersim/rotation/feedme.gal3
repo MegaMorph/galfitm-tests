@@ -1,7 +1,7 @@
 ================================================================================
 # IMAGE and GALFIT CONTROL PARAMETERS
-A) gal1.fits            # Input data image (FITS file)
-B) gal1fit.fits           # Output data image block
+A) gal3.fits            # Input data image (FITS file)
+B) gal3fit.fits           # Output data image block
 C) none                # Sigma image name (made from data if blank or "none") 
 D) ../psf.fits #          # Input PSF image and (optional) diffusion kernel
 E) 1                   # PSF fine sampling factor relative to data 
@@ -34,23 +34,23 @@ U) 0		       # Turn on nonparam with default options
 
 # Component number: 1
  0) sersic                 #  Component type
- 1) 249.0  251.0 1 1       #  Position x, y
- 3) 9.50       1          #  Integrated magnitude 
- 4) 10.         1          #  R_e (effective radius)   [pix]
- 5) 4.0         1          #  Sersic index n (de Vaucouleurs n=4) 
+ 1) 250.0  250.0 1 1       #  Position x, y
+ 3) 10.0        1          #  Integrated magnitude 
+ 4) 20.         1          #  R_e (effective radius)   [pix]
+ 5) 2.5         1          #  Sersic index n (de Vaucouleurs n=4) 
  6) 0.0000      0          #     ----- 
  7) 0.0000      0          #     ----- 
  8) 0.0000      0          #     ----- 
  9) 0.7         1          #  Axis ratio (b/a)  
 10) 0.0         1          #  Position angle (PA) [deg: Up=0, Left=90]
-F4) 0.01  75   0  0       # Fourier mode 4
+F4) 0.01  75   1  1       # Fourier mode 4
 R0) log                # PA rotation func. (tanh, sqrt, log, linear, none)
-R1) 20.        1       # bar radius  [pixels]
-R2) 150.       1       # 96% asymptotic radius (i.e. at 96% of tanh rotation)
-R3) 200.       1       # cumul. coord. rotation out to asymp. radius [degrees]
-R4) 20.	       1       # Logarithmic winding scale radius [pixels]
-R9) 30.        1       # Inclination to L.o.S. [degrees]
-R10) 50        1       # Sky position angle
+R1) 12.        1       # bar radius  [pixels]
+R2) 90.       1       # 96% asymptotic radius (i.e. at 96% of tanh rotation)
+R3) 250.       1       # cumul. coord. rotation out to asymp. radius [degrees]
+R4) 15.	       1       # Logarithmic winding scale radius [pixels]
+R9) 50.        1       # Inclination to L.o.S. [degrees]
+R10) 45        1       # Sky position angle
  Z) 0                      #  Skip this model in output image?  (yes=1, no=0)
 
 
