@@ -1,10 +1,10 @@
 
 ===============================================================================
 # IMAGE and GALFIT CONTROL PARAMETERS
-A) simple/gal.fits,simple/gal.fits,simple/gal.fits            # Input data image (FITS file)
+A) DON'T RUN THIS! simple/gal.fits,simple/gal.fits,simple/gal.fits            # Input data image (FITS file)
 A1) a,b,c              # Band labels
 A2) 5000,3000,6000     # Band wavelengths
-B) simple/imgblock.multi.fits       # Output data image block
+B) simple/imgblock.multinest.fits       # Output data image block
 C) none                # Sigma image name (made from data if blank or "none") 
 D) simple/psf.fits,simple/psf.fits,simple/psf.fits   #        # Input PSF image and (optional) diffusion kernel
 E) 1                   # PSF fine sampling factor relative to data 
@@ -16,6 +16,7 @@ J) 26.563,26.563,26.563              # Magnitude photometric zeropoint
 K) 0.038  0.038        # Plate scale (dx dy)    [arcsec per pixel]
 O) regular             # Display type (regular, curses, both)
 P) 0                   # Choose: 0=optimize, 1=model, 2=imgblock, 3=subcomps
+V) 1	 	       # Use MultiNest sampling algorithm (experimental and slow!)
 
 # INITIAL FITTING PARAMETERS
 #
@@ -34,13 +35,13 @@ P) 0                   # Choose: 0=optimize, 1=model, 2=imgblock, 3=subcomps
 
 # Object number: 1
  0) sersic                 #  object type
- 1) 48.5180,0     1,0  # position x
- 2) 51.2800,0     1,0  #  position y
- 3) 20.0890,0.01   1,1  #  Integrated magnitude	
- 4) 5.1160,0      1,1          #  R_e (half-light radius)   [pix]
- 5) 4.2490,0,0      1          #  Sersic index n (de Vaucouleurs n=4) 
- 9) 0.7570      1          #  axis ratio (b/a)  
-10) -60.3690    1          #  position angle (PA) [deg: Up=0, Left=90]
+ 1) 48.5180,0    cheb 1,0  # position x
+ 2) 51.2800,0    cheb 1,0  #  position y
+ 3) 20.0890,0.01  cheb 1,1  #  Integrated magnitude	
+ 4) 5.1160,0     cheb 1,1          #  R_e (half-light radius)   [pix]
+ 5) 4.2490,0,0     cheb 1          #  Sersic index n (de Vaucouleurs n=4) 
+ 9) 0.7570     cheb 1          #  axis ratio (b/a)  
+10) -60.3690   cheb 1          #  position angle (PA) [deg: Up=0, Left=90]
  Z) 0                      #  output option (0 = resid., 1 = Don't subtract) 
 
 # Object number: 2
