@@ -1,0 +1,13 @@
+spiralsim/gal*.fits
+spiralsim/galfit.gal*[ugrizYJHK]
+spiralsim/feedme.gal*[150n]
+spiralsim/feedme.gal*mwl
+*/imgblock*.fits
+*/*outputfull*
+*/wrapping*.fits
+*/ngc4261*.fits
+highersim/*/galfit.gal??
+highersim/*/gal*fits
+highersim/*/feedme.*mwl
+highersim/*/feedme.*n*[^bc]
+*/*/*outputfull*
