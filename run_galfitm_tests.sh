@@ -96,7 +96,8 @@ do
     DIR=$(dirname "${FEEDME}")
     FEEDME=$(basename "${FEEDME}")
     cd $DIR
+    echo -n $DIR
     test_galfitm $FEEDME $COMPARE 2> /dev/null
-    cd -
+    cd - 2> /dev/null
 done
 GALFIT=$SAVED_GALFIT
