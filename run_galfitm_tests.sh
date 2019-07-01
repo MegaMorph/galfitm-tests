@@ -3,7 +3,7 @@
 VERSION=$1
 COMPARE=$2
 TESTNAME=$3
-GALFIT="../exec/galfitm-"$VERSION
+GALFIT="../megamorph/galfit/exec/galfitm-"$VERSION
 
 function compare {
     if ! diff -w -q $1 $2 > /dev/null ; then
@@ -28,6 +28,7 @@ function test_galfitm {
     cat $OUTPUTFULL | tail -100 &> $OUTPUT
     mv -f galfit.01 $OUTFEEDME &> /dev/null
     mv -f */*galfit.01 $OUTFEEDME &> /dev/null
+    mv -f *galfit.01 $OUTFEEDME &> /dev/null
     mv -f fit.log $OUTLOG &> /dev/null
     if [ $? -ne 0 ] ; then
 	echo "BAD?: failed to run $GALFIT $INFEEDME"
