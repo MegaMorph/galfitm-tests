@@ -3,7 +3,7 @@
 # Note that this should be used with original GALFIT.
 
 from glob import glob
-import pyfits
+from astropy.io import fits as pyfits
 import os, sys, getopt
 
 
@@ -57,14 +57,14 @@ def make_images(arch='linux'):
 
 
 def make_noise_feedme(feedme):
-    feedmelines = file(feedme).readlines()
+    feedmelines = open(feedme).readlines()
     for i, n in enumerate(noiselevels):
         for nonparam in nonparams:
             if nonparam:
                 np = 'n'
             else:
                 np = ''
-            feedmeout = file(feedme+'n%i%s'%(n,np), 'w')
+            feedmeout = open(feedme+'n%i%s'%(n,np), 'w')
             for l in feedmelines:
                 ls = l.split(None, 2)
                 if len(ls) > 1 and ls[0] == 'A)':
@@ -87,9 +87,9 @@ def make_mwl_model_feedme(feedme='galfit.gal8'):
     mag_arms = [16.999,16.127,15.753,15.529,15.389,15.41,15.384,15.192,15.281]
 
     component = 0
-    feedmelines = file(feedme).readlines()
+    feedmelines = open(feedme).readlines()
     for i, b in enumerate(bands):
-        feedmeout = file(feedme+b, 'w')
+        feedmeout = open(feedme+b, 'w')
         for l in feedmelines:
             ls = l.split(None, 2)
             if len(ls) > 1 and ls[0] == '3)':
@@ -113,8 +113,8 @@ def make_mwl_model_feedme(feedme='galfit.gal8'):
 
 def make_mwl_fit_feedme(feedme='feedme.gal8'):
     bands = 'ugrizYJHK'
-    feedmelines = file(feedme).readlines()
-    feedmeout = file(feedme+'mwl', 'w')
+    feedmelines = open(feedme).readlines()
+    feedmeout = open(feedme+'mwl', 'w')
     for l in feedmelines:
         ls = l.split(None, 3)
         if len(ls) > 1 and ls[0] == '3)':
@@ -143,12 +143,12 @@ def main(argv=None):
     try:
         try:
             opts, args = getopt.getopt(argv[1:], "hf", ["help", "force"])
-        except getopt.error, msg:
+        except getopt.error as msg:
             raise Usage(msg)
         clobber = False
         for o, a in opts:
             if o in ("-h", "--help"):
-                print __doc__
+                print(__doc__)
                 return 1
             if o in ("-f", "--force"):
                 clobber = True
@@ -159,9 +159,9 @@ def main(argv=None):
         elif len(args) > 1:
             raise Usage("Wrong number of arguments")
         make_images(arch)
-    except Usage, err:
-        print >>sys.stderr, err.msg
-        print >>sys.stderr, "For help use --help"
+    except Usage as err:
+        print(err.msg, file=sys.stderr)
+        print("For help use --help", file=sys.stderr)
         return 2
  
 if __name__ == "__main__":
